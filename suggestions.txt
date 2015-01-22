@@ -1,0 +1,29 @@
+Ian: I have a limited perspective, but a big thing for me is the role people at news orgs are playing. i.e. @amandacox @mbostock
+
+you could mention novel uses of the GPU for big data viz, see vispy.org or superconductor.github.io/superconductor/ #shamelessplug
+
+JCGS
+
+Graphical Aids for the Analysis of Two-Level Nonregular Designs 23(3) 2014
+John Tyssedal & Ranveig Niemi
+
+A Graphical Goodness-of-Fit Test for Dependence Models in Higher Dimensions 23(3) 2014
+Marius Hofert & Martin Mächler
+
+Functional Data Analysis of Tree Data Objects 23(2) 2014
+Dan Shen, Haipeng Shen, Shankar Bhamidi, Yolanda Muñoz Maldonado, Yongdai Kim & J. S. Marron
+
+** Massively Parallel Nonparametric Regression, With an Application to Developmental Brain Mapping 23(1) 2014
+Philip T. Reiss, Lei Huang, Yin-Hsiu Chen, Lan Huo, Thaddeus Tarpey & Maarten Mennes
+
+Comment on “The Generalized Pairs Plot” 23(1) 2014 Michael Friendly
+
+Residual Diagnostics for Covariate Effects in Spatial Point Process Models 22(2) 2013 Adrian Baddeleyae, Ya-Mei Changb, Yong Songc & Rolf Turnerd
+
+A New Graphical Tool for Copula Selection 22(2) 2013 Frederik Michielsa & Ann De Schepperb
+
+Infovis and Statistical Graphics: Different Goals, Different Looks 22(1) 2013 Andrew Gelmana & Antony Unwinb and discussions (the whole issue is devoted to graphics)
+
+Developing Systems for Real-Time Streaming Analysis 21(3) 2012 Sarah Michalaka, Andrew DuBoisb, David DuBoisb, Scott Vander Wiela & John Hogdenc
+
+Computational Tools for Evaluating Phylogenetic and Hierarchical Clustering Trees 21(3) 2012 John Chakeriana & Susan Holmesb
