@@ -7,7 +7,9 @@
 \begin{document}
 
 \title{Data Visualization and Statistical Graphics in Big Data Analysis}%: What are the modern successors to John W. Tukey's pencil and paper, and mainframe computer, tools?}
-\author{Dianne Cook, Department of Statistics, Iowa State Universityy\\Eun-Kyung Lee, EWHA\\Mahbubul Majumder, University of Nebraska-Omaha}
+\author{Dianne Cook, Department of Statistics, Iowa State Universityy\\
+Eun-Kyung Lee, EWHA\\
+Mahbubul Majumder, University of Nebraska-Omaha}
 \date{These are the thoughts that I have for pulling together the article on Visualization of Big Data for the Annual Reviews. }
 \maketitle
 
@@ -77,6 +79,65 @@ Figure \ref{DMC1} shows one plot used early by the ISU DMC team, to examine retu
 \caption{One of the preliminary plots made by the ISU DMC team. Item ID plotted against order date, colored by return rate. }
 \label{DMC1}
 \end{figure*}
+
+\section{Review of the literature}
+
+
+\begin{itemize}
+\item  tabplot library
+
+http://cran.r-project.org/web/packages/tabplot/index.html
+
+{\tt tabplot} is a R package for a visualization of a big data with various type of variables.
+ All the observations are sorted by the order of pre-fixed reference variable and then divided into bins. One variable is represented by one column. For continuous variable, each bin is represented by a bar with the height of the average value in the corresponding bin. For categorical variable, the stacked bar is used.
+ In this method, the big data is summarized by the binning and plotted with this summarized information. With several options, the user can change the pre-fixed reference variable,
+ zoom in the specific area, or use the subset of data.
+
+\item scagnostics and ScagExplorer
+
+http://cran.r-project.org/web/packages/scagnostics/index.html
+
+ ScagExplorer: Exploring Scatterplots by Their Scagnostics - Dang, T.N., Wilkinson, L.
+{\it Pacific Visualization Symposium (PacificVis), 2014 IEEE}
+
+
+\item ggplot2 / Bigvis
+
+\item dandelion plot
+
+\item measuring and visualizing the stability of biomarker selection techniques
+
+\item visualizing high density clusters in multidimensional data using optimized star coordinates
+
+\item visual software analytics for the build optimization of large-scale software systems
+
+\item linked treemap - a 3D treemap-nodelink layout for visualizing hierarchical structures
+
+\item graphs as navigational infrastructure for high dimensional data spaces
+
+\item Eulerian tour algorithms for data visualization and the PairViz package
+
+\item a graphical goodness-to-fit test for dependence models in higher dimensions
+
+\item visualization of categorical response models - from data glyphs to parameter glyphs
+
+\item visualizing multiple quantile plots
+
+\item the generalized ridge trace plot - visualizing bias and prediction
+
+\item tradeoffs in information graphics
+
+\item partition maps
+
+\item determining and depicting relationships among components in high-dimensional variable selection
+
+\item dissimilarity plots - a visual exploration tool for partitional clustering
+
+\item multiclass data exploration using space transformed visualization plots
+
+\item pairwise display of high dimensional information via Eulerian tours and hamiltonian decompositions
+
+\end{itemize}
 
 \end{document}
 
