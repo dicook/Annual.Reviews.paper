@@ -26,28 +26,28 @@ In the 1970s J. W. Tukey introduced the world to exploratory data analysis -- da
 today's most able young people find exciting and worth learning about on their own''}
 \end{quote}
 
-I have heard twice in the last two months from successful data mining teams: the key to their model winning the competition was the data pre-processing involving a lot of data plots that helped them to understand what they were working with, and problems with the data that needed to be addressed before being able to make effective models. This is important for big data, how to effectively clean, transform and pre-process large complex data sets. Visualization plays a key role. This is just as important for big data as it was for John Tukey's days, and the technology has radically changed. 
+I have heard twice in the last two months from successful data mining teams: the key to their model winning the competition was the data pre-processing involving a lot of data plots that helped them to understand what they were working with, and problems with the data that needed to be addressed before being able to make effective models. This is important for big data, how to effectively clean, transform and pre-process large complex data sets. Visualization plays a key role. This is just as important for big data as it was for John Tukey's days, and the technology has radically changed.
 
-What I'd like to do for the big data visualization review paper is to focus on the importance of plotting data to learn things that were not expected, and to improve data analysis and modeling. 
+What I'd like to do for the big data visualization review paper is to focus on the importance of plotting data to learn things that were not expected, and to improve data analysis and modeling.
 
 \begin{itemize} \itemsep 0in
 \item Very short intro to the spirit of EDA, as was practiced by J. W. Tukey.
 
 \item How technology has changed the landscape of EDA
 
-\item Work that has come between Tukey and the young researchers of today, focusing on people who may not have received a lot of attention: Andreas Buja, Antony Unwin, Chris Wild, John Maindonald, Debby Swayne, Hadley Wickham, Yihui Xie. 
+\item Work that has come between Tukey and the young researchers of today, focusing on people who may not have received a lot of attention: Andreas Buja, Antony Unwin, Chris Wild, John Maindonald, Debby Swayne, Hadley Wickham, Yihui Xie.
 
-\item What are the building blocks for his successors today: R and bioconductor, enable everyone to participate; reshaping data, data wrangling, split-apply-combine, 
+\item What are the building blocks for his successors today: R and bioconductor, enable everyone to participate; reshaping data, data wrangling, split-apply-combine,
 
-\item The largest chunk will be examples from people who have won major big data analysis competitions in the past year, how visualization played a role,  what plots they made and what they learned from them, that helped to improve the model results. 
+\item The largest chunk will be examples from people who have won major big data analysis competitions in the past year, how visualization played a role,  what plots they made and what they learned from them, that helped to improve the model results.
 
-\item Interplay between exploratory and inferential statistics, how to couple discovery of structure with assessment of how real the patterns are. 
+\item Interplay between exploratory and inferential statistics, how to couple discovery of structure with assessment of how real the patterns are.
 
 \item Also will review relevant publications in major journals: TAS, JCGS, Computational Statistics, Statistical Science, JASA, JSS, ... that show new graphics methodology.
 
 \end{itemize}
 
-John Tukey's EDA, and the tools for plotting your data are all around us today, but knowledge of how to effectively leverage visualization is not widespread or effectively incorporated into statistics curricula. 
+John Tukey's EDA, and the tools for plotting your data are all around us today, but knowledge of how to effectively leverage visualization is not widespread or effectively incorporated into statistics curricula.
 
 \section{Data Competition Success Due to Data Visualization}
 
@@ -57,10 +57,10 @@ In April, 2011 Kaggle posted the details of the Heritage Health Prize ``Improve 
 
 \begin{quote}
 {\em ``In many of the analytics problems I have been involved in, the problem you end up dealing with is not the one you initially were briefed to solve.
-These new problems are always discovered by visualising the data in some way and spotting curious patterns." }\url{http://www.anotherdataminingblog.blogspot.co.uk/2011/12/whats-going-on-here.html} 
+These new problems are always discovered by visualising the data in some way and spotting curious patterns." }\url{http://www.anotherdataminingblog.blogspot.co.uk/2011/12/whats-going-on-here.html}
 \end{quote}
 
-Here is an example from Dr Brierley's blog, that illustrates a algorithmic trading challenge. Figure \ref{liqshock} shows a plot made of timing of ``liquidity shocks'' in data from the London Stock Exchange. There is something going on a 2:30pm, 3:30pm and 4pm. This can only be seen when all commodities are looked at together. Perhaps it is people going to lunch, coffee breaks, timing of the opening of other stock exchanges. Using time alone is dangerous because it is most likely event-related, which may change to other times with new data. Without determining the causes of these spikes modeling them is not robust, and it looks like for this reason Dr Brierley decided that this competition was not worth entering because the data was inadequate. 
+Here is an example from Dr Brierley's blog, that illustrates a algorithmic trading challenge. Figure \ref{liqshock} shows a plot made of timing of ``liquidity shocks'' in data from the London Stock Exchange. There is something going on a 2:30pm, 3:30pm and 4pm. This can only be seen when all commodities are looked at together. Perhaps it is people going to lunch, coffee breaks, timing of the opening of other stock exchanges. Using time alone is dangerous because it is most likely event-related, which may change to other times with new data. Without determining the causes of these spikes modeling them is not robust, and it looks like for this reason Dr Brierley decided that this competition was not worth entering because the data was inadequate.
 
 \begin{figure*}
 \centerline{\includegraphics[width=4in]{images/shockeventtimings.png}}
@@ -70,9 +70,9 @@ Here is an example from Dr Brierley's blog, that illustrates a algorithmic tradi
 
 \subsection{Data Mining Cup}
 
-Each year Prudsys AG  challenges students with  the Data Mining Cup competition. In 2014, the problem was announced to student team on April 2, and students needed to have their final entry by May 14. The student teams had six weeks to develop a solution for a data mining problem on the topic of optimal return prognosis. More specifically, the goal was to use an online shop�s historical purchase data to come up with a model for new orders that would calculate the probability of a purchase leading to a return. In this year's competition, a team of students (Guillermo Basulto-Elias (statistics), Fan Cao (statistics), Xiaoyue Cheng (statistics), Marius Dragomiroiu (computer science), Jessica Hicks (bioinformatics and computational biology), Cory Lanker (statistics), Ian Mouzon (statistics), Lanfeng Pan (statistics) and Xin Yin (bioinformatics and computational biology/statistics) from Iowa State University was the first north American team to win. A key component of that win was the pre-processing of the data, that utilized substantial graphics to learn about their data, and inform their modeling. 
+Each year Prudsys AG  challenges students with  the Data Mining Cup competition. In 2014, the problem was announced to student team on April 2, and students needed to have their final entry by May 14. The student teams had six weeks to develop a solution for a data mining problem on the topic of optimal return prognosis. More specifically, the goal was to use an online shop? historical purchase data to come up with a model for new orders that would calculate the probability of a purchase leading to a return. In this year's competition, a team of students (Guillermo Basulto-Elias (statistics), Fan Cao (statistics), Xiaoyue Cheng (statistics), Marius Dragomiroiu (computer science), Jessica Hicks (bioinformatics and computational biology), Cory Lanker (statistics), Ian Mouzon (statistics), Lanfeng Pan (statistics) and Xin Yin (bioinformatics and computational biology/statistics) from Iowa State University was the first north American team to win. A key component of that win was the pre-processing of the data, that utilized substantial graphics to learn about their data, and inform their modeling.
 
-Figure \ref{DMC1} shows one plot used early by the ISU DMC team, to examine return rates by time and product. Yellow indicates most of the ordered items where kept, blue means they were mostly returned and pink are items to be predicted. Two major structures are immediately visible, new product introductions in July 2012 and January 2013. The other major structure is that new data to be predicted was in the third season of the time period, and this information was crucial to construct good training and test sets for model building. 
+Figure \ref{DMC1} shows one plot used early by the ISU DMC team, to examine return rates by time and product. Yellow indicates most of the ordered items where kept, blue means they were mostly returned and pink are items to be predicted. Two major structures are immediately visible, new product introductions in July 2012 and January 2013. The other major structure is that new data to be predicted was in the third season of the time period, and this information was crucial to construct good training and test sets for model building.
 
 \begin{figure*}
 \centerline{\includegraphics[width=7in]{images/orderDate_itemID.png}}
@@ -82,60 +82,104 @@ Figure \ref{DMC1} shows one plot used early by the ISU DMC team, to examine retu
 
 \section{Review of the literature}
 
-
 \begin{itemize}
-\item  tabplot library
+\item  {\tt tabplot}
 
 http://cran.r-project.org/web/packages/tabplot/index.html
 
 {\tt tabplot} is a R package for a visualization of a big data with various type of variables.
  All the observations are sorted by the order of pre-fixed reference variable and then divided into bins. One variable is represented by one column. For continuous variable, each bin is represented by a bar with the height of the average value in the corresponding bin. For categorical variable, the stacked bar is used.
- In this method, the big data is summarized by the binning and plotted with this summarized information. With several options, the user can change the pre-fixed reference variable,
- zoom in the specific area, or use the subset of data.
+ In this method, the big data is summarized by the binning and plotted with this summarized information for each variable. With several options, the user can change the pre-fixed reference variable,
+ zoom in the specific area, or use the subset of data. Even though {\tt tabplot} allows univariate plot in parallel form, the same order of observations is used for each univariate plot and it makes the user able to compare the relationship among variables.
 
-\item scagnostics and ScagExplorer
+\item {\tt scagnostics} and ScagExplorer
 
 http://cran.r-project.org/web/packages/scagnostics/index.html
 
- ScagExplorer: Exploring Scatterplots by Their Scagnostics - Dang, T.N., Wilkinson, L.
-{\it Pacific Visualization Symposium (PacificVis), 2014 IEEE}
+Wilkinson, L., Anad, A., and Grossman, R.(2005).
+``Graph-theoretic Scagnostics''
+{\em Proceedings of the IEEE Information Visualization 2005}, 157-164
+
+Wilkinson, L., Anad, A., and Grossman, R.(2006).
+``High-Dimensional Visual Analytics: Interactive Exploration Guided by Pairwise Views of Point Distributions''
+{\em IEEE TRANSACTIONS ON VISUALIZATION AND COMPUTER GRAPHICS}, {\bf 12(6)} , 1363-1372
 
 
-\item ggplot2 / Bigvis
+Dang, T. N., Wilkinson, L.(2014).
+``ScagExplorer: Exploring Scatterplots by Their Scagnostics''
+{\em PACIFICVIX '14 Proceedings of the 2014 IEEE Pacific Visualization Symposium }, 73-80
 
-\item dandelion plot
+As the number of variables is increased, the size of scatter plot matrix is getting bigger and  it is  harder to catch interesting feature from scatter plot of each pair of variables. {\tt scagnostics}(Wilkinson et al. 2005; Wilkinson et al. 2006) is developed to detect interesting features of scatter plots from the scatter plot matrix. It is started from an unpublished idea of John and Paul Tukey. It calculates 9 measures for interesting features of the scatter plot - outlying, skewed, clumpy, sparse, striated, convex, skinny, stringy, and monotonic - based on proximity in graph theory. Even though scagnostics values are calculated for the high dimensional data, it still needs to explore these values.
+ScagExplorer(Dang and Wilkinson, 2014) is developed to organize scatter plots into meaningful subsets using scagnostics values. It generates several clusters of scatter plots using scagnostics values and each cluster has a leader plot. ScagExplorer uses these leader plots for visualization instead of the whole scatter plot matrix. Also it visualize the leader plots with the parallel coordinate plots of scagnostics values and use brush to select specific interesting features using scagnostics values. With scagnostics and ScagExplorer, the user can efficiently explore high dimensional data.
 
-\item measuring and visualizing the stability of biomarker selection techniques
+\item {\tt hexbin }
 
-\item visualizing high density clusters in multidimensional data using optimized star coordinates
+http://cran.r-project.org/web/packages/hexbin/index.html
 
-\item visual software analytics for the build optimization of large-scale software systems
+{\tt hexbin} is developed for visualize two continuous variables in big data. The scatter plot is an usual way to represent two continuous variables. Because of overplotting problem in big data, it is not easy to find out the main feature of data. The main idea of {\tt hexbin} is the binning in 2D space with hexagonal bin and the counts in each bin are used to draw plot. The resulting plot is similar to the plot with alpha blending, but {\tt hexbin} is much faster than the original alpha blending. The original alpha blending needs to draw all the points with the specific transparent rate, but this hexbin method only needs to draw one point per bin and the number of bins is much smaller than the number of points in big data.
 
-\item linked treemap - a 3D treemap-nodelink layout for visualizing hierarchical structures
+\item {\tt ggplot2} / {\tt bigvis}
 
-\item graphs as navigational infrastructure for high dimensional data spaces
+https://github.com/hadley/bigvis
 
-\item Eulerian tour algorithms for data visualization and the PairViz package
+Instead of representing raw data with million points, sometimes it is better to summarize data in  proper way and use the summarized data for visualization. {\tt bigvis} summarize big data using aggregation and smoothing techniques. It is very useful to use before plotting big data. After summarizing big data using{\tt bigvis}, the user can draw various plots using {\tt ggplot2}. {\tt ggplot2} provides the easy way to generate complicated plots for exploring data analysis. It is developed under the grammar of graphics. It also provides multiple layers of plots that is useful to add statistical modeling results in the same plot.
+
+%%%%%%%%%%%
 
 \item a graphical goodness-to-fit test for dependence models in higher dimensions
 
-\item visualization of categorical response models - from data glyphs to parameter glyphs
+Hofert M., M\"{a}chler, M. (2014).
+``A Graphical Goodness-of-Fit Test for
+Dependence Models in Higher Dimensions''
+{\em Journal of Computational and Graphical Statistics}, {\bf 23(3)}, 700-716
 
-\item visualizing multiple quantile plots
+Hofert and Machler(2014) proposed a graphical goodness-of-fit test for dependence models.
+It is based on pairs of transformed variables with the Rosenblatt transformation. For each pairs of transformed data, Q-Q plots are generated in scatter plot matrix form. Each plot with small p-value is highlighted with different background color so the user can easily catch two problematic pairs with very large Q-Q plot matrix. All these methods are provided in R package {\tt copula}. Using highlighted background with additional information (p-value in this method), it is able to overcome the problem with high dimensional data visualization.
 
-\item the generalized ridge trace plot - visualizing bias and prediction
+\item Functional Data Analysis of Tree Data Objects 23(2) 2014
+Dan Shen, Haipeng Shen, Shankar Bhamidi, Yolanda Muñoz Maldonado, Yongdai Kim and J. S. Marron
 
-\item tradeoffs in information graphics
 
-\item partition maps
 
-\item determining and depicting relationships among components in high-dimensional variable selection
+\item Massively Parallel Nonparametric Regression, With an Application to Developmental Brain Mapping 23(1) 2014
+Philip T. Reiss, Lei Huang, Yin-Hsiu Chen, Lan Huo, Thaddeus Tarpey and Maarten Mennes
 
-\item dissimilarity plots - a visual exploration tool for partitional clustering
 
-\item multiclass data exploration using space transformed visualization plots
+When the number of dependent variables are very large and we need to model them with same covariates,
+ the computational burden increases enormously, especially when we need to consider the penalty term with the tuning parameter. Shen {\it et al}(2014) proposed  the efficient algorithm for massively parallel nonparametric regression.
+ Also they suggested the way to summarize the significant models from nonparametric regression using clustering method. With these clusters, the user can easily figure out models with similar patterns. It is very helpful for dependent data in very high dimensional space, especially for the spatial type-dependency data for example, neuroimaging data. This method is provided as R package {\tt vows}.
 
-\item pairwise display of high dimensional information via Eulerian tours and hamiltonian decompositions
+
+\item "The Generalized Pairs Plot” 22(1) 2013 Emerson JW et al.
+
+Comment on “The Generalized Pairs Plot” 23(1) 2014 Michael Friendly
+
+For two continuous variables, we usually draw the scatter plot. The scatter plot matrix is for multivariate variable representation. Each variable treats as continuous variable and draw scatter plot for all pairs of variables. However
+the properties of variables should be considered to draw plots. The generalized pairs plot (Emerson {\it et al.}, 2013) extends the EDA idea of Tukey and allows mosaic plot for two categorical variables, side-by-side box plot for mixed variables (one continuous variable and one categorical variable). It also provides several different plots or summary statistics for all pairs of variables that the users can design the plot matrix on their own way. These generalized pairs plot are available in two different libraries in R. One is {\tt gpairs} and the other is {\\ GGally}. The approach of these two libraries are different. {\tt gpairs} is a methodological development for exploratory data analysis and {\tt GGally} is based on the grammar of graphics. Friendly (2014) suggested that this plot needs to add annotations, renderings. Also he focused on the marginal versus conditional views and and suggested to draw the generalized pairs plot with the residuals after modeling instead of the raw data itself.
+
+\item Residual Diagnostics for Covariate Effects in Spatial Point Process Models 22(2) 2013 Adrian Baddeleyae, Ya-Mei Changb, Yong Song and Rolf Turnerd
+
+    The spatial model is very complex model with dependent structures and it is not easy to find well-explained model. The suitable tools to check the fitted model during the data analysis procedure is very important to use. However there were no efficient tools available to check misspecification for spatial point process models.  Baddeleyae {\it et al} (2013) used the partial residual plot and the added variable plot. The partial residual plot is originally for detecting nonlinearity of independent variables in the linear model and the added variable plot is for checking the model after fitting whether new variable is needed or not. They extended these idea to the spatial point process model.  R package {\tt spatstat} is also developed for these methods.
+
+
+\item visualizing high density clusters in multidimensional data using optimized star coordinates
+
+Long, T. V. Linsen, L.(2011).
+``Visualizing high density clusters in multidimensional
+data using optimized star coordinates''
+{\em Computational Statistics}, {\bf 26}, 655-678
+
+After the cluster analysis, we need to check the distribution of clusters, the relation or distance between clusters, etc. However if we have very high dimensional data, it is not easy to check these points visually. Long and Linsen (2011) propose the visualization method for a hierarchical tree of high density clusters in high dimensional data. They project the multidimensional clusters to a 2D or 3D layout using an optimized star coordinates layout. It allows to explore the distribution of clusters interactively and help the user understand the relations between clusters and the original data space.
+
+\item OnSet
+
+Sadana, R., Major T., Dove, A., and Stasko, J.(2014).
+``OnSet: A Visualization Technique for Large-scale Binary Set Data''
+{\em IEEE TRANSACTIONS ON VISUALIZATION AND COMPUTER GRAPHICS}, {\bf 20(12)} , 1993-2002
+
+When one observation is a set of elements, we can make the whole list of elements from all observation and dataset is rearranged that each elements represents binary variables and if one observation has the elements, get 1 as a value, else the value is 0. if the whole list of elements are very large, it is not easy to figure out the features of data.
+OnSet is a technique to visualize large-scale binary set data. One observation is represented in one layer of plot and one pixel represents one elements in the plot. For the elements in this observation, pixels are highlighted. With these type of representation, it is easy to calculate "and" ,"or" operations.
+
 
 \end{itemize}
 
