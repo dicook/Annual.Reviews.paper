@@ -4,27 +4,38 @@
 \usepackage{fullpage}
 \usepackage[colorlinks=false]{hyperref}
 
+\RequirePackage{natbib}
+
 \begin{document}
 
 \title{Data Visualization and Statistical Graphics in Big Data Analysis}%: What are the modern successors to John W. Tukey's pencil and paper, and mainframe computer, tools?}
-\author{Dianne Cook, Department of Statistics, Iowa State Universityy\\
+\author{Dianne Cook, Department of Statistics, Iowa State University\\
 Eun-Kyung Lee, EWHA\\
 Mahbubul Majumder, University of Nebraska-Omaha}
-\date{These are the thoughts that I have for pulling together the article on Visualization of Big Data for the Annual Reviews. }
+%\date{These are the thoughts that I have for pulling together the article on Visualization of Big Data for the Annual Reviews. }
+%\date{}
 \maketitle
 
-In the 1970s J. W. Tukey introduced the world to exploratory data analysis -- data visualization was a major component of this area. Some of his famous quotes point to the reasons for the importance of statistical graphics:
+\section{Introduction}
 
-\begin{quote}
-{\em Good pictures of data ``force the unexpected upon us.'' } (J. W. Tukey)
-\end{quote}
+In the 1970s J. W. Tukey introduced the world to exploratory data analysis (EDA). Data visualization was a major component of this area, and Tukey made substantial contributions to statistical graphics. (A good summary of his contributions can be found in \citet{stuetzlefriedman2002}.) His philosophy was that good pictures of data can reveal what we never expected to see. His pencil and paper method, the stem-and-leaf plot, is universally taught in introductory statistics, and his experiments in plotting high-dimensional data in the PRIM-9 system can be found in today's data visualization software. Even such widely visible systems such as GapMinder (\url{http://www.gapminder.org}) and BabyNameVoyager (\url{http://www.babynamewizard.com/}) owe some credit to interactive graphics that arose in the first years of EDA research. 
 
-\noindent and he was also an early adopter of harnessing technology for data analysis, and 45 years ago foretold today's technological big data world:
+It's surprising that the stem-and-leaf plot has persisted in the classroom to present day. The pencil paper methods were essential to the 1970s because access to the technology to do interactive graphics was limited. Today there is almost universal access to technology for data analysis and little need for hand-sketching numbers. Today's EDA is very much about harnessing good computer-generated plots of data. Tukey was fortunate enough to have access to state-of-the-art technology, and was also an early advocate of harnessing technology for data analysis. Forty-five years ago he foresaw today's technological big data world and just how important computational tools would be for statistical analysis and how good utilization of technology can attract the best young talent to the field. 
 
-\begin{quote}
-{\em ``Today, software and hardware together provide far more powerful factories than most statisticians realize, factories that many of
-today's most able young people find exciting and worth learning about on their own''}
-\end{quote}
+ %Some of his famous quotes point to the reasons for the importance of statistical graphics:
+
+%\begin{quote}
+%{\em Good pictures of data ``force the unexpected upon us.'' } (J. W. Tukey)
+%\end{quote}
+
+%\noindent and he was also :
+
+%\begin{quote}
+%{\em ``Today, software and hardware together provide far more powerful factories than most statisticians realize, factories that many of
+%today's most able young people find exciting and worth learning about on their own''}
+%\end{quote}
+
+\section{How to win a data mining challenge!}
 
 I have heard twice in the last two months from successful data mining teams: the key to their model winning the competition was the data pre-processing involving a lot of data plots that helped them to understand what they were working with, and problems with the data that needed to be addressed before being able to make effective models. This is important for big data, how to effectively clean, transform and pre-process large complex data sets. Visualization plays a key role. This is just as important for big data as it was for John Tukey's days, and the technology has radically changed.
 
@@ -182,6 +193,9 @@ OnSet is a technique to visualize large-scale binary set data. One observation i
 
 
 \end{itemize}
+
+\bibliographystyle{asa}
+\bibliography{visualization}
 
 \end{document}
 
