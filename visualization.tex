@@ -18,7 +18,7 @@ Mahbubul Majumder, University of Nebraska-Omaha}
 
 \section{Introduction}
 
-In the 1970s J. W. Tukey introduced the world to exploratory data analysis (EDA). Data visualization was a major component of this area, and Tukey made substantial contributions to statistical graphics. (A good summary of his contributions can be found in \citet{stuetzlefriedman2002}.) His philosophy was that good pictures of data can reveal what we never expected to see. His pencil and paper method, the stem-and-leaf plot, is universally taught in introductory statistics, and his experiments in plotting high-dimensional data in the PRIM-9 system can be found in today's data visualization software. Even such widely visible systems such as GapMinder (\url{http://www.gapminder.org}) and BabyNameVoyager (\url{http://www.babynamewizard.com/}) owe some credit to interactive graphics that arose in the first years of EDA research. 
+In the 1970s J. W. Tukey introduced the world to exploratory data analysis (EDA). Data visualization was a major component of this area, and Tukey made substantial contributions to statistical graphics. (A good summary of his contributions can be found in \citet{stuetzlefriedman2002}.) His philosophy was that good pictures of data can reveal what we never expected to see. His pencil and paper method, the stem-and-leaf plot, is universally taught in introductory statistics, and the fruits of his experiments in plotting high-dimensional data in the PRIM-9 system can be found in today's data visualization software. Even such widely visible systems such as GapMinder (\url{http://www.gapminder.org}) and BabyNameVoyager (\url{http://www.babynamewizard.com/}) owe some credit to interactive graphics that arose in the first years of EDA research. 
 
 It's surprising that the stem-and-leaf plot has persisted in the classroom to present day. The pencil paper methods were essential to the 1970s because access to the technology to do interactive graphics was limited. Today there is almost universal access to technology for data analysis and little need for hand-sketching numbers. Today's EDA is very much about harnessing good computer-generated plots of data. Tukey was fortunate enough to have access to state-of-the-art technology, and was also an early advocate of harnessing technology for data analysis. Forty-five years ago he foresaw today's technological big data world and just how important computational tools would be for statistical analysis and how good utilization of technology can attract the best young talent to the field. 
 
@@ -45,54 +45,36 @@ graphics nowadays there is no excuse for ducking the labour of this
 preliminary phase, and it may save some red faces later.''}
 \end{quote}
 
-\noindent Big data provides new challenges for data visualization but good data plots are an  essential element for wrangling with big data.
+\noindent Big data provides new challenges for data visualization. Being able, and knowing how to, make good data plots is an indispensable component of wrangling with big data. The term ``big data'' means something different depending who you listen to, read, or chat with. The working definition for this article is not entirely to do with size of the data in terms of variables, or samples, but also the complexity. It may be data that has hundreds of variables, stored in many related tables, a large database that has been collected and perhaps neglected for many years, repositories of emails, health records from machines in almost every doctor's office that automatically files information, communications networks from social media, scores from tests administered to our youth across the globe, humongous quantities of data simulated from global climate models to assess the impact of climate change, or new business data being collected and stored in new systems like hadoop. We are interested in data that potentially informs  us about our world, to learn how to be more efficient in business operations or in delivering health care, what statistics we need improve to get our tennis game to the level of a champion, or who are the key people that bind a social network into a cohesive group.
 
-% infographics, information visualization, visual analytics
+John Tukey's EDA, and the tools for plotting your data are all around us today. Knowing how to effectively leverage visualization is a fundamental skill of today's society. New methods and software have made this easy and accessible for most people today. Big data, open data and open source software, makes this a golden age for data visualization. 
 
+This paper has three components: (1) Contemporary illustrations of the usefulness of data visualization for understanding data, (2) a review of the literature on methodology for big data visualization, and (3) a review of technological advances that make big data visualization possible. Inevitably, the review cannot be entirely comprehensive, and we ask for the reader's leniency upfront if we do not name all the people and work that have made important contributions, but we hope that our coverage points to a broad selection of advances that will entice the reader to use these as a starting point to dig deeper and independently discover more interesting developments.  
 
-What I'd like to do for the big data visualization review paper is to focus on the importance of plotting data to learn things that were not expected, and to improve data analysis and modeling.
+\section{Illustrations of Visualization for Understanding Data}
 
-\begin{itemize} \itemsep 0in
-\item Very short intro to the spirit of EDA, as was practiced by J. W. Tukey.
-
-\item How technology has changed the landscape of EDA
-
-\item Work that has come between Tukey and the young researchers of today, focusing on people who may not have received a lot of attention: Andreas Buja, Antony Unwin, Chris Wild, John Maindonald, Debby Swayne, Hadley Wickham, Yihui Xie.
-
-\item What are the building blocks for his successors today: R and bioconductor, enable everyone to participate; reshaping data, data wrangling, split-apply-combine,
-
-\item The largest chunk will be examples from people who have won major big data analysis competitions in the past year, how visualization played a role,  what plots they made and what they learned from them, that helped to improve the model results.
-
-\item Interplay between exploratory and inferential statistics, how to couple discovery of structure with assessment of how real the patterns are.
-
-\item Also will review relevant publications in major journals: TAS, JCGS, Computational Statistics, Statistical Science, JASA, JSS, ... that show new graphics methodology.
-
-\end{itemize}
-
-John Tukey's EDA, and the tools for plotting your data are all around us today, but knowledge of how to effectively leverage visualization is not widespread or effectively incorporated into statistics curricula.
-
-\section{How to win a data mining challenge!}
+\subsection{How to Win a Data Mining Challenge!}
 
 Two stories from 2014 point to the use of graphics from successful data mining teams: the key to their model winning the competition was the data pre-processing involving a lot of data plots that helped them to understand what they were working with, and problems with the data that needed to be addressed before being able to make effective models. This is important for big data, how to effectively clean, transform and pre-process large complex data sets. Visualization plays a key role. This is just as important for big data as it was for John Tukey's days, and the technology has radically changed.
 
-\subsection{Kaggle Health Heritage Prize}
+\subsubsection{Kaggle Health Heritage Prize}
 
-In April, 2011 Kaggle posted the details of the Heritage Health Prize ``Improve Healthcare, Win \$3,000,000".  Dr Phil Brierley was part of the three person team that won the first two milestone awards of \$230,000, and combined forces with another team to win the final prize of \$500,000. This competition is an example of big data challenges of today: large amounts of data on hospital admissions being used to develop models to improve the efficiency of healthcare spending. In interviews post-prize, he echoes of Tukey's long ago words:
+In April, 2011 Kaggle posted the details of the Heritage Health Prize ``Improve Healthcare, Win \$3,000,000''.  Dr Phil Brierley was part of the three person team that won the first two milestone awards of \$230,000, and combined forces with another team to win the final prize of \$500,000. This competition is an example of big data challenges of today: large amounts of data on hospital admissions being used to develop models to improve the efficiency of healthcare spending. In interviews post-prize, there are echoes of Tukey's long ago words:
 
 \begin{quote}
 {\em ``In many of the analytics problems I have been involved in, the problem you end up dealing with is not the one you initially were briefed to solve.
-These new problems are always discovered by visualising the data in some way and spotting curious patterns." }\url{http://www.anotherdataminingblog.blogspot.co.uk/2011/12/whats-going-on-here.html}
+These new problems are always discovered by visualising the data in some way and spotting curious patterns.'' }\url{http://www.anotherdataminingblog.blogspot.co.uk/2011/12/whats-going-on-here.html}
 \end{quote}
 
-Here is an example from Dr Brierley's blog, that illustrates a algorithmic trading challenge. Figure \ref{liqshock} shows a plot made of timing of ``liquidity shocks'' in data from the London Stock Exchange. There is something going on a 2:30pm, 3:30pm and 4pm. This can only be seen when all commodities are looked at together. Perhaps it is people going to lunch, coffee breaks, timing of the opening of other stock exchanges. Using time alone is dangerous because it is most likely event-related, which may change to other times with new data. Without determining the causes of these spikes modeling them is not robust, and it looks like for this reason Dr Brierley decided that this competition was not worth entering because the data was inadequate.
+Here is an example from Dr Brierley's blog, that illustrates a algorithmic trading challenge. Figure \ref{liqshock} shows a plot made of timing of ``liquidity shocks'' in data from the London Stock Exchange. There is something going on a 2:30pm, 3:30pm and 4pm. This can only be seen when all commodities are looked at together. Perhaps it is people going to lunch, coffee breaks, timing of the opening of other stock exchanges. Using time alone is dangerous because it is most likely event-related, which may change to other times with new data. Without determining the causes of these spikes modeling them is not robust, and it looks like for this reason Dr Brierley decided that this competition was not worth entering because the data provided was inadequate.
 
 \begin{figure*}
 \centerline{\includegraphics[width=4in]{images/shockeventtimings.png}}
-\caption{Times of ``liquidity shocks" in data from the London Stock Exchange. (Reprinted with permission from \url{http://www.anotherdataminingblog.blogspot.co.uk/2011/12/whats-going-on-here.html})}
+\caption{Times of ``liquidity shocks'' in data from the London Stock Exchange. (Reprinted with permission from \url{http://www.anotherdataminingblog.blogspot.co.uk/2011/12/whats-going-on-here.html}.)}
 \label{liqshock}
 \end{figure*}
 
-\subsection{Data Mining Cup}
+\subsubsection{Data Mining Cup}
 
 Each year Prudsys AG  challenges students with  the Data Mining Cup competition. In 2014, the problem was announced to student team on April 2, and students needed to have their final entry by May 14. The student teams had six weeks to develop a solution for a data mining problem on the topic of optimal return prognosis. More specifically, the goal was to use an online shop? historical purchase data to come up with a model for new orders that would calculate the probability of a purchase leading to a return. In this year's competition, a team of students (Guillermo Basulto-Elias (statistics), Fan Cao (statistics), Xiaoyue Cheng (statistics), Marius Dragomiroiu (computer science), Jessica Hicks (bioinformatics and computational biology), Cory Lanker (statistics), Ian Mouzon (statistics), Lanfeng Pan (statistics) and Xin Yin (bioinformatics and computational biology/statistics) from Iowa State University was the first north American team to win. A key component of that win was the pre-processing of the data, that utilized substantial graphics to learn about their data, and inform their modeling.
 
@@ -104,7 +86,19 @@ Figure \ref{DMC1} shows one plot used early by the ISU DMC team, to examine retu
 \label{DMC1}
 \end{figure*}
 
-\section{Review of the literature}
+\subsection{Visualization is NOT Prediction}
+
+.... but it is beneficial in its own right for exploring data. 
+
+\subsubsection{OECD PISA}
+
+Talk about fishing! And avoiding fishing. And Buja's post-model ...
+
+\subsubsection{Elections}
+
+\subsubsection{Airline Traffic}
+
+\section{Review of the Literature}
 
 \begin{itemize}
 \item  {\tt tabplot}
@@ -204,6 +198,32 @@ Sadana, R., Major T., Dove, A., and Stasko, J.(2014).
 When one observation is a set of elements, we can make the whole list of elements from all observation and dataset is rearranged that each elements represents binary variables and if one observation has the elements, get 1 as a value, else the value is 0. if the whole list of elements are very large, it is not easy to figure out the features of data.
 OnSet is a technique to visualize large-scale binary set data. One observation is represented in one layer of plot and one pixel represents one elements in the plot. For the elements in this observation, pixels are highlighted. With these type of representation, it is easy to calculate "and" ,"or" operations.
 
+
+\end{itemize}
+
+\section{Technological Advances}
+
+\section{Synopsis}
+
+Explain working definitions of terms related to data visualization: infographics, information visualization, visual analytics
+
+
+What I'd like to do for the big data visualization review paper is to focus on the importance of plotting data to learn things that were not expected, and to improve data analysis and modeling.
+
+\begin{itemize} \itemsep 0in
+\item Very short intro to the spirit of EDA, as was practiced by J. W. Tukey.
+
+\item How technology has changed the landscape of EDA
+
+\item Work that has come between Tukey and the young researchers of today, focusing on people who may not have received a lot of attention: Andreas Buja, Antony Unwin, Chris Wild, John Maindonald, Debby Swayne, Hadley Wickham, Yihui Xie.
+
+\item What are the building blocks for his successors today: R and bioconductor, enable everyone to participate; reshaping data, data wrangling, split-apply-combine,
+
+\item The largest chunk will be examples from people who have won major big data analysis competitions in the past year, how visualization played a role,  what plots they made and what they learned from them, that helped to improve the model results.
+
+\item Interplay between exploratory and inferential statistics, how to couple discovery of structure with assessment of how real the patterns are.
+
+\item Also will review relevant publications in major journals: TAS, JCGS, Computational Statistics, Statistical Science, JASA, JSS, ... that show new graphics methodology.
 
 \end{itemize}
 
