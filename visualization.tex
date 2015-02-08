@@ -147,11 +147,19 @@ In the 2012 season, this work was expanded to explore the effect of political ac
 
 \subsubsection{Airline Traffic}
 
-\subsubsection{wikipedia vis in Beautiful Visualization }
+\subsubsection{Wikipedia}
+
+Wikipedia is a collaboratively written encyclopedia, that is a huge resource for the general public. Because it is a primary example of mass editing, the flow of edits is potentially interesting. This problem was tackled by \citet{wiki}, with an associated web site \url{http://fernandaviegas.com/wikipedia.html} where you can see some of the visualizations. The book chapter describes the process of pulling the data, pre-processing and making visualizations of different aspects. Their endeavor began in 2003, early days for the encyclopedia. As an example of the magnitude of the data, the page on ``Microsoft'' had 198 edits generating 6.3 megabytes of text, and the page on ``Cat'' had just 54 edits. 
+
+The edits data is huge. To tackle is Wattenberg and Viega, initially created an interactive visualization for single pages. They use a modified parallel coordinate plot \citep{In85,We90}, which might also be considered to be a variation of a hammock plot \citep{hammock,ggparallel}, with versions as the variables, and text size as the stripe thickness. Stripes are colored by author, so individual contributions to pages can be tracked. (Anonymous editors are grey.) The overall height of the plot indicates the kength of the article. There are two prominent examples shown: ``chocolate'' and ``abortion''. The displays enable some information to be immediate: if there is ownership of a page by a few editors then there are a few differently colored stripes. The page for ``abortion'' has a big empty patch indicating tha the entire page was erased temporarily, probably by a malicious editor. Tug-or-wars between editors can be seen in some politically or emotionally controversial subjects. Interaction is provided to trace editors contributions and to see the actual text that was edited. 
+
+With big data, we see that there are many different choices in what to plot. Here, the authors chose to tackle the problem using the page as a basic unit. In a secondary task their basic unit is an editor, and a new display called a chromogram is employed to enable viewing how an editor has contributed to wikipedia.  These both would be considered to be drill downs into the data, because each shows a very narrow slice of the data. Ideally, approaching a problem as large as this would also provide some larger visual overviews: number of pages over time, number of authors over time, how many pages different authors edit, ... and provide some comparative views, pairs of pages for example, or hierarchical topic lists, or how pages link to each other. The data implores the analyst to display it in many more different ways.
 
 \subsubsection{SF Housing in Beautiful Data}
 
 \subsubsection{Hand's UK credit card data}
+
+\subsubsection{Jockers Text vis}
 
 \section{Review of the Literature}
 
@@ -255,6 +263,8 @@ OnSet is a technique to visualize large-scale binary set data. One observation i
 
 
 \end{itemize}
+
+epivizir
 
 \section{Technological Advances}
 
