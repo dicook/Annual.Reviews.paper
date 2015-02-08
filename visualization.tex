@@ -66,41 +66,91 @@ In April, 2011 Kaggle posted the details of the Heritage Health Prize ``Improve 
 These new problems are always discovered by visualising the data in some way and spotting curious patterns.'' }\url{http://www.anotherdataminingblog.blogspot.co.uk/2011/12/whats-going-on-here.html}
 \end{quote}
 
-Here is an example from Dr Brierley's blog, that illustrates a algorithmic trading challenge. Figure \ref{liqshock} shows a plot made of timing of ``liquidity shocks'' in data from the London Stock Exchange -- yes, this is a really simple plot, but it tells us a lot about the data. There is something going on a 2:30pm, 3:30pm and 4pm. This can only be seen when all commodities are looked at together. Perhaps it is people going to lunch, coffee breaks, timing of the opening of other stock exchanges. Using time alone is dangerous because it is most likely event-related, which may change to other times with new data. Without determining the causes of these spikes modeling them is not robust. For this reason Dr Brierley decided that this particular competition was not worth entering because the data provided was inadequate.
-
-\begin{figure*}
+\begin{figure*}[htp]
 \centerline{\includegraphics[width=4in]{images/shockeventtimings.png}}
 \caption{Times of ``liquidity shocks'' in data from the London Stock Exchange. (Reprinted with permission from \url{http://www.anotherdataminingblog.blogspot.co.uk/2011/12/whats-going-on-here.html}.)}
 \label{liqshock}
 \end{figure*}
 
+Here is an example from Dr Brierley's blog, that illustrates a algorithmic trading challenge. Figure \ref{liqshock} shows a plot made of timing of ``liquidity shocks'' in data from the London Stock Exchange -- yes, this is a really simple plot, but it tells us a lot about the data, which is:
+
+\begin{quote}
+{\em ``Now it is quite clear there is something going on at 1pm, 2:30pm, after 3:30pm and at 4pm.
+
+Interestingly these spikes are only evident when all commodities are looked at together, they are not as obvious in any individual commodity.
+
+My first question if I was solving a business problem would be to return to the business to get more insight in what was going on here. My initial thoughts were lunch breaks and the opening times of other Stock Exchanges around the world - as 3:30pm London time could be around opening time in New York.
+
+Understanding the cause of these peaks is important as you would expect the reaction to them (the problem to solve) to be a function of the cause.
+
+If we did discover it was the opening times of other exchanges, then I would ask for extra information like the specific dates, so I could calculate when these peaks would occur in the future when the clocks changed. We do not have this information at the current time, or even the day of the week (it can be inferred but not accurately as there will be public holidays when the exchanges are closed) 
+
+As it stands any models built could potentially fail on the leaderboard (or real life) data as our model might think 2:30pm is a special time, wheras really it is when another exchange opens, or when people come back from lunch. We need this causal information rather than just dealing with the effect - time differences change - lunch breaks may change.
+
+The current competition data is potentially lacking the full information required to build a model that is as robust as possible over time.'' }
+\end{quote}
+
 \subsubsection{Data Mining Cup}
 
 Each year Prudsys AG  challenges students with  the Data Mining Cup competition. In 2014, the problem was announced to student team on April 2, and students needed to have their final entry by May 14. The student teams had six weeks to develop a solution for a data mining problem on the topic of optimal return prognosis. More specifically, the goal was to use an online shop? historical purchase data to come up with a model for new orders that would calculate the probability of a purchase leading to a return. In this year's competition, a team of students (Guillermo Basulto-Elias (statistics), Fan Cao (statistics), Xiaoyue Cheng (statistics), Marius Dragomiroiu (computer science), Jessica Hicks (bioinformatics and computational biology), Cory Lanker (statistics), Ian Mouzon (statistics), Lanfeng Pan (statistics) and Xin Yin (bioinformatics and computational biology/statistics) from Iowa State University was the first north American team to win. A key component of that win was the pre-processing of the data, that utilized substantial graphics to learn about their data, and inform their modeling.
 
-Figure \ref{DMC1} shows one plot used early by the ISU DMC team, to examine return rates by time and product. Yellow indicates most of the ordered items where kept, blue means they were mostly returned and pink are items to be predicted. Two major structures are immediately visible, new product introductions in July 2012 and January 2013. The other major structure is that new data to be predicted was in the third season of the time period, and this information was crucial to construct good training and test sets for model building.
+Figure \ref{DMC1} shows one plot used early by the ISU DMC team, to examine return rates by time and product. Yellow indicates the ordered items were kept, blue means they were returned and pink are items to be predicted. Yes, it is a really ugly plot!!! However, it is very informative: Two major structures are immediately visible, new product introductions in July 2012 and January 2013. Themost important feature, though, is that new data to be predicted was in the third season of the time period, and this information was crucial to construct good training and test sets for model building.
 
-\begin{figure*}
+\begin{figure*}[htp]
 \centerline{\includegraphics[width=7in]{images/orderDate_itemID.png}}
-\caption{One of the preliminary plots made by the ISU DMC team. Item ID plotted against order date, colored by return rate. }
+\caption{One of the preliminary plots made by the ISU DMC team. Item ID is plotted against order date, colored by return rate. The students learned that the data to be predicted (pink) did not look like the training data provided for building a model (blue/yellow).}
 \label{DMC1}
 \end{figure*}
 
 \subsection{Visualization is NOT Prediction}
 
-.... and it is beneficial in its own right. In this section, we will describe examples of visualization being used in the process of analyzing big data sets, partially from our own work and two examples from published work. What we learn form plots is different from that of modeling and prediction, and it allows the reader to think about the problems addressed by the data. 
+.... and it is beneficial in its own right. In this section, we will describe examples of visualization being used in the process of analyzing big data sets, partially from our own work and two examples from published work. What we learn from plots is different from that of modeling and prediction. 
+
+%For big data, there are possibly many, many, many things that might be learned. There are likely many facets to the data. It is important to note that exploring big data visually is typically generating, not testing, hypotheses.
 
 \subsubsection{OECD PISA}
 
-Talk about fishing! And avoiding fishing. And Buja's post-model ...
+The Programme for International Student Assessment (PISA) is a triennial survey conducted by the Organization for Economic Cooperation and Development (OECD) with a rotating emphasis on one of mathematics, reading, or science. In 2012, the emphasis was on mathematics. The data was made available by the OECD as part of a data challenge for the useR! 2014 conference. Entries to the competition can be found at http://beta.icm.edu.pl/PISAcontest/. 
+
+This data is big because there is a lot of information collected in addition to the test scores. In the student table there are records for about 500,000 students from 65 different countries, and 635 variables. The variables include informaiton about gender, language, household possessions attitude to math, use of the internet, many different aspects of their lives. The parent table has 143 variables from 100,000 parent-completed surveys providing information about the students households, such as if both parents are in the home or if its a foster home, parents occupations, how the child's school was selected. The school table contains survey results completed by 18,000 school principals producing 291 variables. These items include information about numbers of teachers, supply shortages, teacher turnover, educational background of teachers, streaming of classes. There are many different questions that we might try to answer with this data. After the magnitude of the data was determined, by making quick counts of each of the tables provided, and examining the data dictionaries, our group hashed out possible questions and expectations of what associations we might see in the data.
+
+One issue that we were interested in was about the gender gap between boys and girls in math. We hear about this in the media frequently, and we were interested to see if it is present in this multinational test data. To examine this question we calculated the diffeence between the mean math test scores for boys and girls in each of the countries, and plotted it. Sample weights were utlized in calculating the averages. The result is shown in Figure \ref{OECD-gender}. 
+
+\begin{figure*}[htp]
+\centerline{\includegraphics[width=0.5\textwidth]{images/mathgap.pdf}\includegraphics[width=0.5\textwidth]{images/readinggap.pdf}}
+\caption{Examing the gender gap in math and reading by country.}
+\label{OECD-gender}
+\end{figure*}
+
 
 \subsubsection{Elections}
+
+\begin{figure*}[htp]
+\centerline{\includegraphics[width=0.95\textwidth]{images/elections.pdf}}
+\caption{Tracking polls and final popular vote leading up to the 2008 US Presidential election.}
+\label{election}
+\end{figure*}
+
+In the 2008 US Presidential election cycle a young man called Nate Silver burst onto the world stage with an accurate prediction of an Obama win. His web site \url{http://fivethirtyeight.com/} (538) has expanded from politics to cover data stories in economics, science, life and sports. To obtain his accurate prediction of the election outcomes, he aggregated polls from different sources, but an important component was to adjust and weight the polls from different pollsters. Figure \ref{election} shows the polls from major pollsters, in the 100 days leading up to the election, as reported in \citet{mosley2010}. Percentage difference in percentage for Obama vs McCain is plotted against time the poll was released, as were made available on the web site \url{http://www.electoral-vote.com/}. Each dot represents one poll result, and color indicates pollster. The grey line and ribbon represents a loess smoothing \citep{CGS92} across all the poll results to indicate trend. There is a lot of variation in polls, even when conducted in very similar time frames. The variation in results can be as high as 10 percentage points. 
+
+Differences between polls produced by different pollsters can be seen. DailyKos light blue) is consistently higher than the trend, and consistently produced the most pro-Obama results. Rasmussen (pink) tended to be fairly close to the trend or below it (pro-McCain). Hotline (yellow) was varied early on in the season but closer to election day was near the average of all other polls. Gallup (orange) is noticeably varied, it has some of the most pro-McCain results as well as the most pro-Obama results. Gallup is a legacy American pollster who dates back to the early 1900s, and we would have expected that they would be providing more reliable polling numbers than observed. Interestingly the 538 web site now has detailed ratings of the major pollsters operating in the USA, and Gallup scores a poor C+. The plot of the national trend polls allows us to see the variability and the bias' of polling organizations. The pollster DailyKos, also known as Research 200, is a community action organization with political leanings towards to Democratic party. Actually it is one of the pollsters currently ``banned'' by 538! Rasmussen on the other hand has a reputation of leaning to the right, and currently has a large adjustment value to correct this on 538. Hotline is fairly neutral. 
+
+\begin{figure*}[t]
+\centerline{\includegraphics[width=0.55\textwidth]{images/elections2.pdf}}
+\caption{Percentage difference by state.}
+\label{election2}
+\end{figure*}
+
+The US election is not won on popular vote, though. Each state is assigned a number of electoral votes, roughly based on the size of the population. For example, in 2008 Iowa was worth 7 votes, whereas New York is worth 31. The electoral votes for most states as assigned based on winner take all: Obama won New York with 57\% in favor, so he earned all the 31 points. A candidate needs to tally up 270 or more points to win the presidency. Figure \ref{election2} illustrates these the state by state variation in polls. 
+
 
 \subsubsection{Airline Traffic}
 
 \subsection{wikipedia vis in Beautiful Visualization }
 
 \subsection{SF Housing in Beautiful Data}
+
+\subsection{Hand's UK credit card data}
 
 \section{Review of the Literature}
 
@@ -211,6 +261,7 @@ OnSet is a technique to visualize large-scale binary set data. One observation i
 
 Explain working definitions of terms related to data visualization: infographics, information visualization, visual analytics
 
+Talk about fishing! And avoiding fishing. And Buja's post-model ...
 
 What I'd like to do for the big data visualization review paper is to focus on the importance of plotting data to learn things that were not expected, and to improve data analysis and modeling.
 
