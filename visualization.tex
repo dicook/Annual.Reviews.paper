@@ -147,6 +147,12 @@ In the 2012 season, this work was expanded to explore the effect of political ac
 
 \subsubsection{Airline Traffic}
 
+Every few years, the graphics and computing sections of the merican Statistical Association provides a data challenge, the Data Expo (\url{http://stat-computing.org/dataexpo/}), and encourages students, faculty, industry statisticians to make a visual analysis. In 2009 the data consisted {\em ``of flight arrival and departure details for all commercial flights within the USA, from October 1987 to April 2008. This is a large dataset: there are nearly 120 million records in total, and takes up 1.6 gigabytes of space compressed and 12 gigabytes when uncompressed.''}. 
+
+There were 9 entries, four of which won prizes, and are described in short articles. \citet{expo-wicklin} used SAS to produce a number of informtive displays about departure delays air travel in the USA: calendar view summaries show differences between years, months and days of the week, time series display volume of traffic and weekly cycles, and a heatmap is ued to compare carriers over the time period. This was a lot of data displyed very succinctly, providing key details of flight delays. \citet{expo-wickham} tackled a smaller task, comparing operations at two different airports, and \citet{expo-dey} focused on a model to find the path of least delay between any pair of airports. 
+
+\citet{expo-hofmann} explored many aspects of the data. Maps of origin to destination show which carriers operate on a hub system and which don't. Time series of volume at major airports show effects of events like the 9/11 tragedy. Side-by-side boxplots were utilized to display delays by airport, revealing the problematic EWR, SFO, BOS, LGA and the efficient operations of DTW, MSP and DFW. Facetted scatterplots with overlaid loess fits show trends in delays by carrier. This group also looked for ``gaps'' in the data, where planes are last seen at one airport, and then magically appear at another airport. These gaps correspond to ghist flights, planes that fly passengerless, in order to get a vehicle into a locaiton that it is needed. It represents inefficiency in operations. Most carriers have been reducing this costly operation, but Northwest airlines had an increase in the latter few years of this data. Delta, which merged with Northwest in 2008, saw dramatic improvement in effciency. Basic plots revealed that many problems with the data, flights leaving 12 hours before they were scheduled, several hot air balloons that travel 430 miles per hour, and more than 200,000 flights of less than 50 miles. Stringing delays together with weather patterns revealed the problems that strong cross-winds cause at airports. And using some interpolation between geographic locations of airpots, the departure and arrival times, allowed animating air traffic flow across the nation.
+
 \subsubsection{Wikipedia}
 
 Wikipedia (\url{https://www.wikipedia.org/}) is a collaboratively written encyclopedia, that is a huge resource for the general public. Because it is a primary example of mass editing, the flow of edits is potentially interesting. This problem was tackled by \citet{wiki}, with an associated web site \url{http://fernandaviegas.com/wikipedia.html} where you can see some of the visualizations. The book chapter describes the process of pulling the data, pre-processing and making visualizations of different aspects. Their endeavor began in 2003, early days for the encyclopedia. As an example of the magnitude of the data, the page on ``Microsoft'' had 198 edits generating 6.3 megabytes of text, and the page on ``Cat'' had just 54 edits. 
@@ -171,7 +177,7 @@ This article illustrates elegantly how visualization can be used to explore data
 
 Working with huge amounts of data can often be done with basic statistical graphics. There are a few cautions. Bars of small counts get lost easily with big data, which might result in failing to observe rare events. Basic scatterplots may suffer from overplotting.  Scaling up of basic statistical graphics does require some care.
 
-\subsubsection{Jockers Text vis}
+\subsubsection{Text visualization}
 
 \section{Review of the Literature}
 
