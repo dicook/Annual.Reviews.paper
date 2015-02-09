@@ -49,6 +49,10 @@ preliminary phase, and it may save some red faces later.''}
 
 John Tukey's EDA, and the tools for plotting your data are all around us today. Knowing how to effectively leverage visualization is a fundamental skill of today's society. New methods and software have made this easy and accessible for most people today. Big data, open data and open source software, makes this a golden age for data visualization. 
 
+{\color[rgb]{1,0,0} In classical statistical inference and experimental studies, the role of data is just to prove the conjecture. In this case the distribution of test statistic is preferably derived theoretically. Data is used to obtain empirical distribution when it is not possible though. In any case, the role of data is passive and has very specific purpose. We can illustrate this by an example. In a situation where researchers want to test the population mean being equal to a certain value, they don't need the data to find the distribution of test statistic as long as some assumptions are met. Data is used only to find the evidence for or against the hypothesis. The formation of hypothesis as well as the derivation of test methods do not require data. It is only needed to finally make the decision.
+
+However, the advent of big data has changed the classical way of thinking. A researcher with enormous amount of data does not necessarily have a well defined hypothesis in mind let alone having test methods. The challenge is to explore data and discover hidden value in the data which may later lead to more formal hypothesis and classical methods to test that.Thus big data turns the role of data more active where data comes first more often. This essentially requires adopting EDA and visualization as very earlier steps for big data analysis. The added advantage of visualization is that it can be used to perform statistical test using visual statistical inference, a method that does not require to satisfy hard-core classical style assumptions allowing making inferential decisions on the fly while doing EDA.}
+
 This paper has three components: (1) Contemporary illustrations of the usefulness of data visualization for understanding data, (2) a review of the literature on methodology for big data visualization, and (3) a review of technological advances that make big data visualization possible. Inevitably, the review cannot be entirely comprehensive, and we ask for the reader's leniency upfront if we do not name all the people and work that have made important contributions, but we hope that our coverage points to a broad selection of advances that will entice the reader to use these as a starting point to dig deeper and independently discover more interesting developments.  
 
 \section{Illustrations of Visualization for Understanding Data}
@@ -279,12 +283,23 @@ Sadana, R., Major T., Dove, A., and Stasko, J.(2014).
 When one observation is a set of elements, we can make the whole list of elements from all observation and dataset is rearranged that each elements represents binary variables and if one observation has the elements, get 1 as a value, else the value is 0. if the whole list of elements are very large, it is not easy to figure out the features of data.
 OnSet is a technique to visualize large-scale binary set data. One observation is represented in one layer of plot and one pixel represents one elements in the plot. For the elements in this observation, pixels are highlighted. With these type of representation, it is easy to calculate "and" ,"or" operations.
 
+\item Visual Statistical Inference
+
+Buja, A., Cook, D., Hofmann, H., Lawrence, M., Lee, E.-K., Swayne, D. F., and Wickham, H. (2009), ``Statistical Inference for Exploratory Data Analysis and Model Diagnostics,? {\em Royal Society Philosophical Transactions A}, {\bf 367}, 4361?4383.
+
 
 \end{itemize}
 
 epivizir
 
 \section{Technological Advances}
+
+\begin{itemize}
+	\item{Scalable computing system} 
+	
+	Hadoop file system (HDFS) and map reduce methods allow manipulation of big data in finite time making EDA possible in real time which otherwise is hard to achieve. For this statistical software R can be used with HDFS and high quality graphics can be produced in real time. I (Mahbub) will write in this direction and can put some references if you think something like this would be useful.......
+	
+\end{itemize}
 
 \section{Synopsis}
 
