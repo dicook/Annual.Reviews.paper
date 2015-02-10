@@ -232,22 +232,23 @@ That statisticians frequently use scatterplots for examining association between
 
 Table plots are adapted from side-by-side histograms, of different variables. We most often see side-by-side plots used to compare the distributions of subsets of the same data, for example comparing males and females. Generally side-by-side boxplots are the optimal way to make comparisons between groups. Histograms can also serve the purpose, but they provide more complex summaries of the distribution than a boxplot renders. Table plots came to prominence with the tableau software \citep{tableau}, but they were recommended originally by \citet{carr-grey} (also shown in \citet{carr-tabplot}) as a way to replace tables with graphs. 
 
-The table plot bins the values of different variables, and displays the mean value of each bin as a bar. For categorical variables stacked bars are displayed. Each plot is sorted in the same way, according to one of the variables in the collection or by another external criteria. The sorting enables a rough assessment of the association between variables -- if the two plots have the same shape then the two variables have positive association. Figure \ref{tabplot} shows an example produced using the recently released R package {\tt tabplot} \citep{tennekes2012package}. It displays the sales records for houses sold in Ames, Iowa from 2008-2010. The variables are sorted by the sales price, 0\% represents the most expensive houses, which has a mean value of about \$500,000, and 100\% represents the cheapest, having a mean value of about \$50,000. There are 1,615 houses in the data set, and these are grouped into 100 bins by the sales price. The mean values the other variables for houses in each these bins is shown in the other plots. The exception is the house style, which is categorical, and so proportions of the different styles are shown in stacked bar charts.  
+The table plot bins the values of different variables, and displays the mean value of each bin as a bar. For categorical variables stacked bars are displayed. Each plot is sorted in the same way, according to one of the variables in the collection or by another external criteria. The sorting enables a rough assessment of the association between variables -- if the two plots have the same shape then the two variables have positive association. Figure \ref{tabplot} shows an example produced using the recently released R package {\tt tabplot} \citep{tennekes2012package}. It displays the sales records for houses sold in Ames, Iowa from 2008-2010. The variables are sorted by the sales price, 0\% represents the most expensive houses, which has a mean value of about \$500,000, and 100\% represents the cheapest, having a mean value of about \$50,000. There are 1,615 houses in the data set, and these are grouped into 100 bins by the sales price. The mean values the other variables for houses in each these bins is shown in the other plots. The exception is the house style, which is categorical, and so proportions of the different styles are shown in stacked bar charts. We learn from this display rough associations: 
+
+\begin{itemize} \itemsep 0in
+\item Sales price is NOT associated with number of bedrooms, which is a little surprising. The pattern in the plot of bedrooms is fairly uniform, evenly distributed across all house prices, which leads to the conclusion that there is no association. On the other hand, there is a slight association with number of baths, because the average number of baths drops from 2 to 1 for lower priced homes.  
+\item Price is closely associated with living area and garage area because fairly strong declines in both coincide with declines in price. 
+\item House style shows a slight association, the higher priced homes are more commonly two story style (green) than the lower priced homes. 
+\end{itemize}
 
 \begin{figure*}[t]
 \centerline{\includegraphics[width=0.95\textwidth]{images/tabplot.pdf}}
-\caption{Table plot of Ames, Iowa, housing sales produced using the R package {\tt tabplot}.}
+\caption{Table plot of Ames, Iowa, housing sales produced using the R package {\tt tabplot}. Variables that have a positive association have similarly shaped distribution.}
 \label{tabplot}
 \end{figure*}
 
-http://cran.r-project.org/web/packages/tabplot/index.html 
+Because the display uses a bar to represent mean values, there is implicit distortion of the data, a trait that is discouraged by \cite{Tufte83}. From a statistical perspective, we know that means or averages may not satisfactorily represent a set of numbers. Additionally, a mean is a point estimate, ideally represented by a point on a plot, with another graphical element, such as a line corresponding to standard error, displaying the variability associated with the estimate. Hence the table plot is a gross reduction and distortion of a large data set. to get a rough sense of the associations it may be reasonable to use, but it is ripe for re-designing to reduce data distortions. 
 
-
- is a R package for a visualization of a big data with various type of variables.
- All the observations are sorted by the order of pre-fixed reference variable and then divided into bins. One variable is represented by one column. For continuous variable, each bin is represented by a bar with the height of the average value in the corresponding bin. For categorical variable, the stacked bar is used.
- In this method, the big data is summarized by the binning and plotted with this summarized information for each variable. With several options, the user can change the pre-fixed reference variable,
- zoom in the specific area, or use the subset of data. Even though {\tt tabplot} allows univariate plot in parallel form, the same order of observations is used for each univariate plot and it makes the user able to compare the relationship among variables.
-
+An interactive version of table plots is available with the R package {\tt tabplotd3} \citep{tabplotd3}. It uses the {\tt d3} software \citep{Bostock:2011} which is a javascript graphics library useful for creating interactive web visualizations.
 
 \item Rearranging and summarizing data {\tt ggplot2} / {\tt bigvis}
 
