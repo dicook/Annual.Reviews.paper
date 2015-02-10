@@ -215,7 +215,7 @@ Working with huge amounts of data can often be done with basic statistical graph
 
 \section{Review of the Literature}
 
-There is a scarcity of papers on visualization of large data in the most likely statistical journals, e.g. Journal of Computational and Graphics Statistics, Computational Statistics, Annals of Applied Statistics. Papers that do focus on graphics are fairly associated with small data, an special statistics-related purposes, rather than providing solutions to visualizing large amounts of data. The most reliable source is IEEE Transactions on Viisualization and Computer Graphics. The papers presented at the annual InfoVis conference are published in this journal in one of the last two issues of each year. A less formal, but very visible resource, the CRAN archive (\url{http://www.r-project.org/CRAN}) contains several recently contributed packages that are useful for working with large amounts of data.
+There is a scarcity of papers on visualization of large data in the most likely statistical journals, e.g. Journal of Computational and Graphics Statistics, Computational Statistics, Annals of Applied Statistics. Papers that do focus on graphics are associated with small data, and special statistics-related purposes, rather than providing solutions to visualizing large amounts of data. The most reliable source of information about visualization of big data is IEEE Transactions on Viisualization and Computer Graphics. The papers presented at the annual InfoVis conference are published in this journal in one of the last two issues of each year. A less formal, but very visible resource, the CRAN archive (\url{http://www.r-project.org/CRAN}) contains several recently contributed packages that are useful for working with large amounts of data.
 
 \begin{itemize}
 \item Scatterplots
@@ -250,6 +250,10 @@ Because the display uses a bar to represent mean values, there is implicit disto
 
 An interactive version of table plots is available with the R package {\tt tabplotd3} \citep{tabplotd3}. It uses the {\tt d3} software \citep{Bostock:2011} which is a javascript graphics library useful for creating interactive web visualizations.
 
+\item Parallel coordinates
+
+Another way to display high-dimensional data is the parallel coordinate plot \citep{In85,We90}. Several developments of these plots have been made in recent years. \citet{hurley.oldford} initially begin working on graphs as a way to organize the axes of a parallel coordinate plot, but the work has extended to provide an algorithm for navigating high-dimensional spaces. Their R package, {\tt PairsViz} \citep{pairviz}, implements the parallel coordinate plot style visualization. \citet{hofmann.vendettuoli} describe variations of parallel coordinate plots for categorical data and their R package, {\tt ggparallel} \citep{ggparallel}, enables others to use the methods.
+
 \item Rearranging and summarizing data 
 
 When data becomes very large an alternative approach can be to make summaries and display these. The {\tt ggplot2} package has revolutionized the display of data for many analysts, and it comes with siblings in the Wickham suite of software that can help process data for viewing in different ways: {\tt tidyr}, {\tt reshape2}, {\tt dplyr}, {\tt lubridate}, {\tt broom}, {\tt fstread}, {\tt bigrquery}, {\tt ggmap}, {\tt bigvis}.
@@ -262,7 +266,7 @@ The split-apply-combine strategy resembles the approach that hadoop \citep{hadoo
 
 \item Interactive graphics
 
-bokeh
+Interactive graphics is still a work in progress. 
 
 %%%%%%%%%%%
 
