@@ -226,7 +226,7 @@ When the number of cases is large, but the number of variables is small, reading
 
 A third issue arises with big data, that the many variables may be of different types, categorical or temporal in addition to numeric. The work described in \citet{emerson2013generalized} and \citet{friendly2014comment} on the generalized pairs plots, and accompanying R packages ({\tt gpairs} in {\tt YaleToolkit} and {\tt ggpairs} in {\tt GGally}) adapt the scatterplot matrix ideas for heterogensous variable types. 
 
-That statisticians frequently use scatterplots for examining association between pairs of variables, despite the existence of many other graphical forms, earns some derision from the InfoVis community. But scatterplots are the ``bread-and-butter'' method to examine joint distributions, something of fundamental importance to statistical thinking, so they are very important for the statistics community. These three additions adapt the method to big data of today.
+That statisticians frequently use scatterplots for examining association between pairs of variables, despite the existence of many other graphical forms, earns some derision from the infovis community. But scatterplots are the ``bread-and-butter'' method to examine joint distributions, something of fundamental importance to statistical thinking, so they are very important for the statistics community. These three additions adapt the method to big data of today.
 
 \item Table plots
 
@@ -246,16 +246,19 @@ The table plot bins the values of different variables, and displays the mean val
 \label{tabplot}
 \end{figure*}
 
-Because the display uses a bar to represent mean values, there is implicit distortion of the data, a trait that is discouraged by \cite{Tufte83}. From a statistical perspective, we know that means or averages may not satisfactorily represent a set of numbers. Additionally, a mean is a point estimate, ideally represented by a point on a plot, with another graphical element, such as a line corresponding to standard error, displaying the variability associated with the estimate. Hence the table plot is a gross reduction and distortion of a large data set. to get a rough sense of the associations it may be reasonable to use, but it is ripe for re-designing to reduce data distortions. 
+Because the display uses a bar to represent mean values, there is implicit distortion of the data, a trait that is discouraged by \cite{Tufte83}. From a statistical perspective, we know that means or averages may not satisfactorily represent a set of numbers. Additionally, a mean is a point estimate, ideally represented by a point on a plot, with another graphical element, such as a line corresponding to standard error, displaying the variability associated with the estimate. Hence the table plot is a gross reduction and distortion of a large data set. to get a rough sense of the associations it may be reasonable to use, but it is ripe for re-designing to reduce data distortions, possibly by using dot displays \citep{Cl93}. 
 
 An interactive version of table plots is available with the R package {\tt tabplotd3} \citep{tabplotd3}. It uses the {\tt d3} software \citep{Bostock:2011} which is a javascript graphics library useful for creating interactive web visualizations.
 
-\item Rearranging and summarizing data {\tt ggplot2} / {\tt bigvis}
+\item Rearranging and summarizing data 
 
-https://github.com/hadley/bigvis
+When data becomes very large an alternative approach can be to make summaries and display these. The {\tt ggplot2} package has revolutionized the display of data for many analysts, and it comes with siblings in the Wickham suite of software that can help process data for viewing in different ways: {\tt tidyr}, {\tt reshape2}, {\tt dplyr}, {\tt lubridate}, {\tt broom}, {\tt fstread}, {\tt bigrquery}, {\tt ggmap}, {\tt bigvis}.
 
+The {\tt bigvis} package \citep{bigvis} summarizes large amounts of data using aggregation and smoothing techniques, and from these summaries users can make various plots with {\tt ggplot2}. Behind the {\tt plyr} \citep{plyr} and {\tt dplyr} \citep{dplyr} packages is the split-apply-combine strategy, meaning that the data is divided into chunks, a function is applied and the results are joined. For example, with climate records from multiple locations we might want to examine linear models at each location. This is easy to do with by split-apply-combine. The {\tt dplyr} package extends the approach with a grammar, and off-loads some work to database operations. 
 
-Instead of representing raw data with million points, sometimes it is better to summarize data in  proper way and use the summarized data for visualization. {\tt bigvis} \citep{bigvis}summarize big data using aggregation and smoothing techniques. It is very useful to use before plotting big data. After summarizing big data using{\tt bigvis}, the user can draw various plots using {\tt ggplot2}\citep{wickham2009ggplot2}. {\tt ggplot2} provides the easy way to generate complicated plots for exploring data analysis. It is developed under the grammar of graphics. It also provides multiple layers of plots that is useful to add statistical modeling results in the same plot.
+%Instead of representing raw data with million points, sometimes it is better to summarize data in  proper way and use the summarized data for visualization. {\tt bigvis} \citep{bigvis}summarize big data using aggregation and smoothing techniques. It is very useful to use before plotting big data. After summarizing big data using{\tt bigvis}, the user can draw various plots using {\tt ggplot2}\citep{wickham2009ggplot2}. {\tt ggplot2} provides the easy way to generate complicated plots for exploring data analysis. It is developed under the grammar of graphics. It also provides multiple layers of plots that is useful to add statistical modeling results in the same plot.
+
+\item Interactive graphics
 
 %%%%%%%%%%%
 
