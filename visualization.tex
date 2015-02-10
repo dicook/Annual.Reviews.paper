@@ -254,11 +254,15 @@ An interactive version of table plots is available with the R package {\tt tabpl
 
 When data becomes very large an alternative approach can be to make summaries and display these. The {\tt ggplot2} package has revolutionized the display of data for many analysts, and it comes with siblings in the Wickham suite of software that can help process data for viewing in different ways: {\tt tidyr}, {\tt reshape2}, {\tt dplyr}, {\tt lubridate}, {\tt broom}, {\tt fstread}, {\tt bigrquery}, {\tt ggmap}, {\tt bigvis}.
 
-The {\tt bigvis} package \citep{bigvis} summarizes large amounts of data using aggregation and smoothing techniques, and from these summaries users can make various plots with {\tt ggplot2}. Behind the {\tt plyr} \citep{plyr} and {\tt dplyr} \citep{dplyr} packages is the split-apply-combine strategy, meaning that the data is divided into chunks, a function is applied and the results are joined. For example, with climate records from multiple locations we might want to examine linear models at each location. This is easy to do with by split-apply-combine. The {\tt dplyr} package extends the approach with a grammar, and off-loads some work to database operations. 
+The {\tt bigvis} package \citep{bigvis} summarizes large amounts of data using aggregation and smoothing techniques, and from these summaries users can make various plots with {\tt ggplot2}. Behind the {\tt plyr} \citep{plyr} and {\tt dplyr} \citep{dplyr} packages is the split-apply-combine strategy, meaning that the data is divided into chunks, a function is applied and the results are joined. For example, with climate records from multiple locations we might want to examine linear models at each location. This is easy to do with by split-apply-combine. The {\tt dplyr} package extends the approach with a grammar, and off-loads some computations to database operations. 
+
+The split-apply-combine strategy resembles the approach that hadoop \citep{hadoop} clusters employ for storing humongous data. Chunks of data are placed in different locations and indexed using keys. Accessing this data requires operating on chunks and combining the results. The Tessera project \citep{tessera} provides an R interface to hadoop style distributed file systems, and an early project paper \citep{guha} describes its use for visualizing large data.  
 
 %Instead of representing raw data with million points, sometimes it is better to summarize data in  proper way and use the summarized data for visualization. {\tt bigvis} \citep{bigvis}summarize big data using aggregation and smoothing techniques. It is very useful to use before plotting big data. After summarizing big data using{\tt bigvis}, the user can draw various plots using {\tt ggplot2}\citep{wickham2009ggplot2}. {\tt ggplot2} provides the easy way to generate complicated plots for exploring data analysis. It is developed under the grammar of graphics. It also provides multiple layers of plots that is useful to add statistical modeling results in the same plot.
 
 \item Interactive graphics
+
+bokeh
 
 %%%%%%%%%%%
 
