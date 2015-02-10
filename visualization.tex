@@ -215,9 +215,14 @@ Working with huge amounts of data can often be done with basic statistical graph
 
 \section{Review of the Literature}
 
-There is a scarcity of papers on visualization of large data in the most likely statistical journals, e.g. Journal of Computational and Graphics Statistics, Computational Statistics, Annals of Applied Statistics. Papers that do focus on graphics are fairly associated with small localized tasks, e.g. 
+There is a scarcity of papers on visualization of large data in the most likely statistical journals, e.g. Journal of Computational and Graphics Statistics, Computational Statistics, Annals of Applied Statistics. Papers that do focus on graphics are fairly associated with small data, an special statistics-related purposes, rather than providing solutions to visualizing large amounts of data. The most reliable source is IEEE Transactions on Viisualization and Computer Graphics. The papers presented at the annual InfoVis conference are published in this journal in one of the last two issues of each year. The CRAN archive (\url{http://www.r-project.org/CRAN}) contains several recently contributed packages that are useful for working with large amounts of data.
 
 \begin{itemize}
+\item {\tt scagnostics} and ScagExplorer
+
+As the number of variables is increased, the size of scatter plot matrix is getting bigger and  it is  harder to catch interesting feature from scatter plot of each pair of variables. {\tt scagnostics} (\citet{wilkinson2005graph}, \citet{wilkinson2014package})  is developed to detect interesting features of scatter plots from the scatter plot matrix. It is started from an unpublished idea of John and Paul Tukey. It calculates 9 measures for interesting features of the scatter plot - outlying, skewed, clumpy, sparse, striated, convex, skinny, stringy, and monotonic - based on proximity in graph theory. Even though scagnostics values are calculated for the high dimensional data, it still needs to explore these values.
+ScagExplorer\citep{dang2014scagexplorer} is developed to organize scatter plots into meaningful subsets using scagnostics values. It generates several clusters of scatter plots using scagnostics values and each cluster has a leader plot. ScagExplorer uses these leader plots for visualization instead of the whole scatter plot matrix. Also it visualize the leader plots with the parallel coordinate plots of scagnostics values and use brush to select specific interesting features using scagnostics values. With scagnostics and ScagExplorer, the user can efficiently explore high dimensional data.
+
 \item  {\tt tabplot}
 
 http://cran.r-project.org/web/packages/tabplot/index.html 
@@ -227,26 +232,6 @@ http://cran.r-project.org/web/packages/tabplot/index.html
  All the observations are sorted by the order of pre-fixed reference variable and then divided into bins. One variable is represented by one column. For continuous variable, each bin is represented by a bar with the height of the average value in the corresponding bin. For categorical variable, the stacked bar is used.
  In this method, the big data is summarized by the binning and plotted with this summarized information for each variable. With several options, the user can change the pre-fixed reference variable,
  zoom in the specific area, or use the subset of data. Even though {\tt tabplot} allows univariate plot in parallel form, the same order of observations is used for each univariate plot and it makes the user able to compare the relationship among variables.
-
-\item {\tt scagnostics} and ScagExplorer
-
-http://cran.r-project.org/web/packages/scagnostics/index.html
-
-Wilkinson, L., Anad, A., and Grossman, R.(2005).
-``Graph-theoretic Scagnostics''
-{\em Proceedings of the IEEE Information Visualization 2005}, 157-164
-
-Wilkinson, L., Anad, A., and Grossman, R.(2006).
-``High-Dimensional Visual Analytics: Interactive Exploration Guided by Pairwise Views of Point Distributions''
-{\em IEEE TRANSACTIONS ON VISUALIZATION AND COMPUTER GRAPHICS}, {\bf 12(6)} , 1363-1372
-
-Dang, T. N., Wilkinson, L.(2014).
-``ScagExplorer: Exploring Scatterplots by Their Scagnostics''
-{\em PACIFICVIX '14 Proceedings of the 2014 IEEE Pacific Visualization Symposium }, 73-80
-
-
-As the number of variables is increased, the size of scatter plot matrix is getting bigger and  it is  harder to catch interesting feature from scatter plot of each pair of variables. {\tt scagnostics} (\citet{wilkinson2005graph}, \citet{wilkinson2014package})  is developed to detect interesting features of scatter plots from the scatter plot matrix. It is started from an unpublished idea of John and Paul Tukey. It calculates 9 measures for interesting features of the scatter plot - outlying, skewed, clumpy, sparse, striated, convex, skinny, stringy, and monotonic - based on proximity in graph theory. Even though scagnostics values are calculated for the high dimensional data, it still needs to explore these values.
-ScagExplorer\citep{dang2014scagexplorer} is developed to organize scatter plots into meaningful subsets using scagnostics values. It generates several clusters of scatter plots using scagnostics values and each cluster has a leader plot. ScagExplorer uses these leader plots for visualization instead of the whole scatter plot matrix. Also it visualize the leader plots with the parallel coordinate plots of scagnostics values and use brush to select specific interesting features using scagnostics values. With scagnostics and ScagExplorer, the user can efficiently explore high dimensional data.
 
 \item {\tt hexbin }
 
