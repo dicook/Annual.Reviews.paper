@@ -1,0 +1,367 @@
+\begin{thebibliography}{71}
+\newcommand{\enquote}[1]{``#1''}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Asimov(1985)}]{As85}
+Asimov, D. (1985), \enquote{{T}he {G}rand {T}our: {A} {T}ool for {V}iewing
+  {M}ultidimensional {D}ata,} \textit{SIAM Journal of Scientific and
+  Statistical Computing}, 6, 128--143.
+
+\bibitem[{Avila et~al.(2015)Avila, Cottam, Dodia, Doig, Paprocki, Shi, {Van de
+  Ven}, and Wang}]{bokeh}
+Avila, D., Cottam, J., Dodia, K., Doig, C., Paprocki, M., Shi, H., {Van de
+  Ven}, B., and Wang, P. (2015), \enquote{{\tt Bokeh}: Python Interactive
+  Visualization Library,} \url{http://bokeh.pydata.org/en/latest/index.html}.
+
+\bibitem[{Baddeley et~al.(2013)Baddeley, Chang, Song, and
+  Turner}]{baddeley2013residual}
+Baddeley, A., Chang, Y.-M., Song, Y., and Turner, R. (2013), \enquote{Residual
+  Diagnostics for Covariate Effects in Spatial Point Process Models,}
+  \textit{Journal of Computational and Graphical Statistics}, 22, 886--905.
+
+\bibitem[{Bostock et~al.(2011)Bostock, Ogievetsky, and Heer}]{Bostock:2011}
+Bostock, M., Ogievetsky, V., and Heer, J. (2011), \enquote{D3 Data-Driven
+  Documents,} \textit{IEEE Transactions on Visualization and Computer
+  Graphics}, 17, 2301--2309.
+
+\bibitem[{Buja et~al.(2009)Buja, Cook, Hofmann, Lawrence, Lee, Swayne, and
+  Wickham}]{buja:2009}
+Buja, A., Cook, D., Hofmann, H., Lawrence, M., Lee, E., Swayne, D., and
+  Wickham, H. (2009), \enquote{{S}tatistical {I}nference for {E}xploratory
+  {D}ata {A}nalysis and {M}odel {D}iagnostics,} \textit{Royal Society
+  Philosophical Transactions A}, 367, 4361--4383.
+
+\bibitem[{Carr(1995)}]{carr-grey}
+Carr, D.~B. (1995), \enquote{Using Gray in Plots,} \textit{Statistical
+  Computing \& Statistical Graphics Newsletter}, 5, 11--14.
+
+\bibitem[{Carr et~al.(2014)Carr, Lewin-Koh, and Maechler}]{carr2010hexbin}
+Carr, D.~B., Lewin-Koh, N., and Maechler, M. (2014), \enquote{{\tt hexbin}:
+  Hexagonal Binning Routines,}
+  \url{http://cran.r-project.org/web/packages/hexbin/index.html}, maintained by
+  Pedesma, E.
+
+\bibitem[{Carr et~al.(1987)Carr, Littlefield, Nicholson, and
+  Littlefield}]{carr-scatmat}
+Carr, D.~B., Littlefield, R.~J., Nicholson, W.~L., and Littlefield, J.~S.
+  (1987), \enquote{Scatterplot Matrix Techniques for Large N,} \textit{Journal
+  of the American Statistical Association}, 82, 424--436.
+
+\bibitem[{Carr and Nusser(1996)}]{carr-tabplot}
+Carr, D.~B. and Nusser, S. (1996), \enquote{Converting Tables To Plots: A
+  Challenge From Iowa State,} \textit{Statistical Computing \& Statistical
+  Graphics Newsletter}, 6, 11--18.
+
+\bibitem[{Chang and Wickham(2015)}]{ggvis}
+Chang, W. and Wickham, H. (2015), \enquote{{\tt ggvis}: Interactive Web
+  Graphics with R,} \url{http://ggvis.rstudio.com/}.
+
+\bibitem[{Chelaru et~al.(2014)Chelaru, Smith, Goldstein, and Bravo}]{epivizr}
+Chelaru, F., Smith, L., Goldstein, N., and Bravo, H.~C. (2014),
+  \enquote{Epivizr: Interactive Visual Analytics for Functional Genomics Data,}
+  \textit{Nature Methods}, 11, 938–--940.
+
+\bibitem[{Cleveland(1993)}]{Cl93}
+Cleveland, W.~S. (1993), \textit{Visualizing {D}ata}, Summit, NJ: Hobart Press.
+
+\bibitem[{Cleveland et~al.(1992)Cleveland, Grosse, and Shyu}]{CGS92}
+Cleveland, W.~S., Grosse, E., and Shyu, W.~M. (1992), \enquote{Local Regression
+  Models,} in \textit{Statistical Models in S}, eds. Chambers, J.~M. and
+  Hastie, T., New York: Chapman and Hall, pp. 309--376.
+
+\bibitem[{Crowder and Hand(1990)}]{CH90}
+Crowder, M.~J. and Hand, D.~J. (1990), \textit{Analysis of Repeated Measures},
+  London: Chapman and Hall.
+
+\bibitem[{Dang and Wilkinson(2014)}]{dang2014scagexplorer}
+Dang, T.~N. and Wilkinson, L. (2014), \enquote{ScagExplorer: Exploring
+  Scatterplots by Their Scagnostics,} in \textit{Pacific Visualization
+  Symposium (PacificVis), 2014 IEEE}, IEEE, pp. 73--80.
+
+\bibitem[{De~Jonge and Tennekes(2013)}]{tabplotd3}
+De~Jonge, E. and Tennekes, M. (2013), \enquote{{\tt tabplotd3}: Interactive
+  Inspection of Large Data,}
+  \url{http://cran.r-project.org/web/packages/tabplotd3/index.html}, maintained
+  by De Jonge, E.
+
+\bibitem[{Dey et~al.(2011)Dey, Phillips, and Steele}]{expo-dey}
+Dey, T., Phillips, D.~J., and Steele, P. (2011), \enquote{A Graphical Tool to
+  Visualize Predicted Minimum Delay Flights,} \textit{Journal of Computational
+  and Graphical Statistics}, 20, 294--297.
+
+\bibitem[{Emerson et~al.(2013)Emerson, Green, Schloerke, Crowley, Cook,
+  Hofmann, and Wickham}]{emerson2013generalized}
+Emerson, J.~W., Green, W.~A., Schloerke, B., Crowley, J., Cook, D., Hofmann,
+  H., and Wickham, H. (2013), \enquote{The Generalized Pairs Plot,}
+  \textit{Journal of Computational and Graphical Statistics}, 22, 79--91.
+
+\bibitem[{Feinberg(2010)}]{wordle}
+Feinberg, J. (2010), \enquote{Wordle,} in \textit{Beautiful Visualization:
+  Looking at Data through the Eyes of Experts}, eds. Steele, J. and Iliinsky,
+  N., Sebastopol, CA: O'Reilly Media, pp. 37--58.
+
+\bibitem[{Friedman and Stuetzle(2002)}]{stuetzlefriedman2002}
+Friedman, J.~H. and Stuetzle, W. (2002), \enquote{John W. Tukey's Work on
+  Interactive Graphics,} \textit{The Annals of Statistics}, 30, 1629--1639.
+
+\bibitem[{Friendly(2014)}]{friendly2014comment}
+Friendly, M. (2014), \enquote{Comment on “The Generalized Pairs Plot”,}
+  \textit{Journal of Computational and Graphical Statistics}, 23, 290--291.
+
+\bibitem[{Gelman and Unwin(2013)}]{gelman2013infovis}
+Gelman, A. and Unwin, A. (2013), \enquote{Infovis and Statistical Graphics:
+  Different Goals, Different Looks,} \textit{Journal of Computational and
+  Graphical Statistics}, 22, 2--28.
+
+\bibitem[{Guha et~al.(2009)Guha, Hafen, and Cleveland}]{guha}
+Guha, P.~K., Hafen, R.~P., and Cleveland, W.~S. (2009), \enquote{Visualization
+  Databases for the Analysis of Large Complex Datasets,} in \textit{Proceedings
+  of the Twelfth International Conference on Artificial Intelligence and
+  Statistics}, eds. {van Dyk}, D. and Welling, M., vol.~5, pp. 193--200.
+
+\bibitem[{Hafen and Cleveland(2015)}]{tessera}
+Hafen, R.~P. and Cleveland, W.~S. (2015), \enquote{Tessera,}
+  http://tessera.io/.
+
+\bibitem[{Hand et~al.(2000)Hand, Blunt, Kelly, and Adams}]{hand2000}
+Hand, D.~J., Blunt, G., Kelly, M.~G., and Adams, N.~M. (2000), \enquote{Data
+  Mining for Fun and Profit,} \textit{Statistical Science}, 15, 111--131.
+
+\bibitem[{Hartigan(1975)}]{scatmat}
+Hartigan, J.~A. (1975), \enquote{Printer Graphics for Clustering,}
+  \textit{Journal of Statistical Computation and Simulation}, 4, 187--213.
+
+\bibitem[{Hofert and M{\"a}chler(2014)}]{hofert2013graphical}
+Hofert, M. and M{\"a}chler, M. (2014), \enquote{A Graphical Goodness-of-fit
+  Test for Dependence Models in Higher Dimensions,} \textit{Journal of
+  Computational and Graphical Statistics}, 23, 700--716.
+
+\bibitem[{Hofmann et~al.(2011)Hofmann, Cook, Kielion, Schloerke, Hobbs, Loy,
+  Mosley, Rockoff, Huang, Wrolstad, and Yin}]{expo-hofmann}
+Hofmann, H., Cook, D., Kielion, C., Schloerke, B., Hobbs, J., Loy, A., Mosley,
+  L., Rockoff, D., Huang, Y., Wrolstad, D., and Yin, T. (2011),
+  \enquote{Delayed, Canceled, on Time, Boarding… Flying in the USA,}
+  \textit{Journal of Computational and Graphical Statistics}, 20, 287--290.
+
+\bibitem[{Hofmann and Vendettuoli(2013{\natexlab{a}})}]{hofmann.vendettuoli}
+Hofmann, H. and Vendettuoli, M. (2013{\natexlab{a}}), \enquote{Common Angle
+  Plots as Perception-True Visualizations of Categorical Associations,}
+  \textit{{IEEE} Trans. Vis. Comput. Graph.}, 19, 2297--2305.
+
+\bibitem[{Hofmann and Vendettuoli(2013{\natexlab{b}})}]{ggparallel}
+--- (2013{\natexlab{b}}), \enquote{{\tt ggparallel}: Variations of Parallel
+  Coordinate Plots for Categorical Data,}
+  \url{http://CRAN.R-project.org/package=ggparallel}, maintained by Hofmann, H.
+
+\bibitem[{Hurley and Oldford(2011{\natexlab{a}})}]{hurley.oldford}
+Hurley, C. and Oldford, R. (2011{\natexlab{a}}), \enquote{Eulerian tour
+  algorithms for data visualization and the PairViz package,}
+  \textit{Computational Statistics}, 26, 613--633.
+
+\bibitem[{Hurley and Oldford(2011{\natexlab{b}})}]{pairviz}
+--- (2011{\natexlab{b}}), \enquote{{\tt PairViz}: Visualization using Eulerian
+  tours and Hamiltonian decompositions,}
+  \url{http://cran.r-project.org/web/packages/PairViz/index.html}, maintained
+  by Hurley, C.B.
+
+\bibitem[{Hyndman and Shang(2010)}]{rainbow}
+Hyndman, R.~J. and Shang, H.~L. (2010), \enquote{Rainbow Plots, Bagplots and
+  Boxplots for Functional Data,} \textit{Journal of Computational and Graphical
+  Statistics}, 19, 29--45.
+
+\bibitem[{Inselberg(1985)}]{In85}
+Inselberg, A. (1985), \enquote{{T}he {P}lane with {P}arallel {C}oordinates,}
+  \textit{The Visual Computer}, 1, 69--91.
+
+\bibitem[{Jockers(2014)}]{jockers}
+Jockers, M.~L. (2014), \textit{Text Analysis with R for Students of
+  Literature}, New York, NY: Springer.
+
+\bibitem[{Kaplan et~al.(2010)Kaplan, Hare, Hofmann, and Cook}]{kaplan2012}
+Kaplan, A., Hare, E., Hofmann, H., and Cook, D. (2010), \enquote{Can You Buy a
+  President? Politics After the Tillman Act,} \textit{Chance}, 27,
+  \url{http://chance.amstat.org/2014/02/president/}.
+
+\bibitem[{Lins et~al.(2013)Lins, Klosowski, and Scheidegger}]{nanocubes}
+Lins, L., Klosowski, J.~T., and Scheidegger, C. (2013), \enquote{Nanocubes for
+  Real-Time Exploration of Spatiotemporal Datasets,} \textit{IEEE Transactions
+  on Visualization and Computer Graphics}, 19, 2456--2465.
+
+\bibitem[{Majumder et~al.(2013)Majumder, Hofmann, and Cook}]{majumder:2013}
+Majumder, M., Hofmann, H., and Cook, D. (2013), \enquote{{V}alidation of
+  {V}isual {S}tatistical {I}nference, {A}pplied to {L}inear {M}odels,}
+  \textit{Journal of American Statistical Association}, 108:503, 942 -- 956.
+
+\bibitem[{Mosley et~al.(2010)Mosley, Cook, Hofmann, Kielion, and
+  Schloerke}]{mosley2010}
+Mosley, L., Cook, D., Hofmann, H., Kielion, C., and Schloerke, B. (2010),
+  \enquote{Monitoring the Election Visually,} \textit{Chance}, 23,
+  \url{http://chance.amstat.org/files/2010/12/Visually.pdf}.
+
+\bibitem[{Moustafa et~al.(2011)Moustafa, Hadia, and Symanzik}]{envelope}
+Moustafa, R.~E., Hadia, A.~S., and Symanzik, J. (2011), \enquote{Multi-Class
+  Data Exploration Using Space Transformed Visualization Plots,}
+  \textit{Journal of Computational and Graphical Statistics}, 20, 298--315.
+
+\bibitem[{Newell et~al.(2013)Newell, Cook, Hofmann, and Jannink}]{newell}
+Newell, M., Cook, D., Hofmann, H., and Jannink, J.-L. (2013), \enquote{An
+  Algorithm for Deciding the Number of Clusters and Validation using Simulated
+  Data with Application to Exploring Crop Population Structure,} \textit{Annals
+  of Applied Statistics}, 7, 1898--1916, {S}upplementary material, including
+  videos available
+  \url{http://streaming.stat.iastate.edu/~dicook/HighDClustering}.
+
+\bibitem[{{R Core Team}(2014)}]{R}
+{R Core Team} (2014), \textit{R: A Language and Environment for Statistical
+  Computing}, R Foundation for Statistical Computing, Vienna, Austria.
+
+\bibitem[{RStudio(2015)}]{shiny}
+RStudio (2015), \enquote{{\tt Shiny}: A Web Application Framework for R,}
+  \url{http://shiny.rstudio.com/}.
+
+\bibitem[{Sadana et~al.(2014)Sadana, Major, Dove, and Stasko}]{sadana2014onset}
+Sadana, R., Major, T., Dove, A., and Stasko, J. (2014), \enquote{OnSet: A
+  Visualization Technique for Large-scale Binary Set Data,} \textit{IEEE
+  Transactions on Visualization and Computer Graphics}, 20, 1993--2002.
+
+\bibitem[{Schonlau(2003)}]{hammock}
+Schonlau, M. (2003), \enquote{Visualizing Categorical Data Arising in the
+  Health Sciences Using Hammock Plots,}
+  \url{http://www.schonlau.net/publication/03jsm_hammockplot.pdf}.
+
+\bibitem[{Shvachko et~al.(2010)Shvachko, Kuang, Radia, and Chansler}]{hadoop}
+Shvachko, K., Kuang, H., Radia, S., and Chansler, R. (2010), \enquote{The
+  Hadoop Distributed File System,} in \textit{Proceedings of the 2010 IEEE 26th
+  Symposium on Mass Storage Systems and Technologies (MSST)}, Washington, DC,
+  USA: IEEE Computer Society, MSST '10, pp. 1--10.
+
+\bibitem[{Sievert and Shirley(2014)}]{LDAvis}
+Sievert, C. and Shirley, K.~E. (2014), \enquote{{\tt LDAvis}: A Method for
+  Visualizing and Interpreting Topics,} in \textit{Proceedings of the Workshop
+  on Interactive Language Learning, Visualization, and Interfaces, Baltimore,
+  Maryland, USA, June 27, 2014.}, pp. 63--70.
+
+\bibitem[{Stolte et~al.(2003)Stolte, Chabot, and Hanrahan}]{tableau}
+Stolte, C., Chabot, C., and Hanrahan, P. (2003), \enquote{Tableau,}
+  \url{http://www.tableau.com/}.
+
+\bibitem[{Tennekes and De~Jonge(2014)}]{tennekes2012package}
+Tennekes, M. and De~Jonge, E. (2014), \enquote{{\tt tabplot}: Tableplot, a
+  Visualization of Large Datasets,}
+  \url{http://cran.r-project.org/web/packages/tabplot/index.html}, maintained
+  by Tennekes, M.
+
+\bibitem[{Tierney(1991)}]{Ti91}
+Tierney, L. (1991), \textit{{L}isp{S}tat: {A}n {O}bject-{O}rientated
+  {E}nvironment for {S}tatistical {C}omputing and {D}ynamic {G}raphics}, New
+  York, NY: Wiley.
+
+\bibitem[{Tufte(1983)}]{Tufte83}
+Tufte, E. (1983), \textit{The Visual Display of Quantitative Information},
+  Cheshire, CT: Graphics Press.
+
+\bibitem[{Tukey(1986)}]{Tukey1986}
+Tukey, J.~W. (1986), \enquote{Sunset Salvo,} \textit{The American
+  Statistician}, 40, 72--76.
+
+\bibitem[{Tukey and Tukey(1985)}]{TukeyTukey1985}
+Tukey, J.~W. and Tukey, P.~A. (1985), \enquote{Computer Graphics and
+  Exploratory Data Analysis: An Introduction,} in \textit{Proceedings of the
+  Sixth Annual Conference and Exposition: Computer Graphics '85}, Fairfax, VA:
+  National Computer Graphics Association, vol.~3, pp. 773--785.
+
+\bibitem[{Urbanek(2015)}]{urbanek}
+Urbanek, S. (2015), \enquote{{\tt ioplots}: High-performance I/O Tools to Run
+  Distributed R Jobs Seamlessly on Hadoop,}
+  \url{https://github.com/s-u/iotools}.
+
+\bibitem[{Urbanek and Theus(2003)}]{iplots}
+Urbanek, S. and Theus, M. (2003), \enquote{{\tt iPlots}: High Interaction
+  Graphics for R,} in \textit{Proceedings of the 3rd International Workshop on
+  Distributed Statistical Computing}.
+
+\bibitem[{Van~Long and Linsen(2011)}]{van2011visualizing}
+Van~Long, T. and Linsen, L. (2011), \enquote{Visualizing High Density Clusters
+  in Multidimensional Data using Optimized Star Coordinates,}
+  \textit{Computational Statistics}, 26, 655--678.
+
+\bibitem[{Wattenberg and Vi\'{e}gas(2010)}]{wiki}
+Wattenberg, M. and Vi\'{e}gas, F. (2010), \enquote{Beautiful History:
+  Visualizing Wikipedia,} in \textit{Beautiful Visualization: Looking at Data
+  through the Eyes of Experts}, eds. Steele, J. and Iliinsky, N., Sebastopol,
+  CA: O'Reilly Media, pp. 175--191.
+
+\bibitem[{Wattenberg et~al.(2007)Wattenberg, Vi{\'e}gas, and
+  Hollenbach}]{wattenberg2007visualizing}
+Wattenberg, M., Vi{\'e}gas, F.~B., and Hollenbach, K. (2007),
+  \enquote{Visualizing Activity on Wikipedia with Chromograms,} in
+  \textit{Human-Computer Interaction--INTERACT 2007}, Springer, pp. 272--287.
+
+\bibitem[{Wegman(1990)}]{We90}
+Wegman, E. (1990), \enquote{{H}yperdimensional {D}ata {A}nalysis {U}sing
+  {P}arallel {C}oordinates,} \textit{Journal of American Statistics
+  Association}, 85, 664--675.
+
+\bibitem[{Wickham(2011{\natexlab{a}})}]{expo-wickham}
+Wickham, C. (2011{\natexlab{a}}), \enquote{A Tale of Two Airports: Exploring
+  Flight Traffic at SFO and OAK,} \textit{Journal of Computational and
+  Graphical Statistics}, 20, 291--293.
+
+\bibitem[{Wickham(2011{\natexlab{b}})}]{plyr}
+Wickham, H. (2011{\natexlab{b}}), \enquote{The Split-Apply-Combine Strategy for
+  Data Analysis,} \textit{Journal of Statistical Software}, 40, 1--29.
+
+\bibitem[{Wickham(2013)}]{bigvis}
+--- (2013), \enquote{Bin-summarise-smooth: A Framework for Visualising Large
+  Data,} Tech. rep., had.co.nz.
+
+\bibitem[{Wickham and Chang(2014)}]{wickham2009ggplot2}
+Wickham, H. and Chang, W. (2014), \enquote{{\tt ggplot2}: An Implementation of
+  the Grammar of Graphics,}
+  \url{http://cran.r-project.org/web/packages/ggplot2/index.html}, maintained
+  by Wickham, H.
+
+\bibitem[{Wickham et~al.(2014)Wickham, Chowdhury, and Cook}]{nullabor}
+Wickham, H., Chowdhury, N.~R., and Cook, D. (2014), \enquote{{\tt nullabor}:
+  Tools for Graphical Inference,}
+  \url{http://cran.r-project.org/web/packages/nullabor/index.html}, maintained
+  by Cook, D.
+
+\bibitem[{Wickham et~al.(2015)Wickham, Francois, and Rstudio}]{dplyr}
+Wickham, H., Francois, R., and Rstudio (2015), \enquote{{\tt dplyr}: A Grammar
+  of Data Manipulation,}
+  \url{http://cran.r-project.org/web/packages/dplyr/index.html}, maintained by
+  Wickham, H.
+
+\bibitem[{Wickham et~al.(2008)Wickham, Lawrence, Lang, and
+  Swayne}]{rggobi-rnews}
+Wickham, H., Lawrence, M., Lang, D.~T., and Swayne, D.~F. (2008), \enquote{An
+  Introduction to RGGobi,} \textit{R-news}, 8, 3–7.
+
+\bibitem[{Wickham et~al.(2009)Wickham, Poole, and Swayne}]{SFHousing}
+Wickham, H., Poole, D., and Swayne, D.~F. (2009), \enquote{Bay Area Blues: the
+  Effect of the Housing Crisis,} in \textit{Beautiful Data: The Stories Behind
+  Elegant Data Solutions}, eds. Segaran, T. and Hammerbacher, J., Sebastopol,
+  CA: O'Reilly Media, pp. 303--319.
+
+\bibitem[{Wicklin(2011)}]{expo-wicklin}
+Wicklin, R. (2011), \enquote{Visualizing Airline Delays and Cancelations,}
+  \textit{Journal of Computational and Graphical Statistics}, 20, 284--286.
+
+\bibitem[{Wilkinson et~al.(2005)Wilkinson, Anand, and
+  Grossman}]{wilkinson2005graph}
+Wilkinson, L., Anand, A., and Grossman, R.~L. (2005), \enquote{Graph-Theoretic
+  Scagnostics.} in \textit{INFOVIS}, vol.~5, p.~21.
+
+\bibitem[{Wilkinson et~al.(2012)Wilkinson, Anand, and
+  Urbanek}]{wilkinson2014package}
+Wilkinson, L., Anand, A., and Urbanek, S. (2012), \enquote{{\tt scagnostics}:
+  Compute Scagnostics - Scatterplot Diagnostics,}
+  \url{http://cran.r-project.org/web/packages/scagnostics/index.html},
+  maintained by Urbanek, S.
+
+\bibitem[{Xie et~al.(2014)Xie, Hofmann, and Cheng}]{xie2014reactive}
+Xie, Y., Hofmann, H., and Cheng, X. (2014), \enquote{{Reactive Programming for
+  Interactive Graphics},} \textit{Statistical Science}, 29, 201--213.
+
+\end{thebibliography}
