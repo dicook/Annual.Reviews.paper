@@ -102,7 +102,7 @@ As it stands any models built could potentially fail on the leaderboard (or real
 The current competition data is potentially lacking the full information required to build a model that is as robust as possible over time.'' }
 \end{quote}
 
-\subsubsection{Data Mining Cup Winners' Strategies}
+\subsubsection{2014 Data Mining Cup Winners' Strategies}
 
 Each year Prudsys AG  challenges students with  the Data Mining Cup competition. In 2014, the problem was announced to student team on April 2, and students needed to have their final entry by May 14. The student teams had six weeks to develop a solution for a data mining problem on the topic of optimal return prognosis. More specifically, the goal was to use an online shop's historical purchase data to come up with a model for new orders that would calculate the probability of a purchase leading to a return. In this year's competition, a team of students (Guillermo Basulto-Elias (statistics), Fan Cao (statistics), Xiaoyue Cheng (statistics), Marius Dragomiroiu (computer science), Jessica Hicks (bioinformatics and computational biology), Cory Lanker (statistics), Ian Mouzon (statistics), Lanfeng Pan (statistics) and Xin Yin (bioinformatics and computational biology/statistics) from Iowa State University was the first north American team to win. A key component of that win was the pre-processing of the data, that utilized substantial graphics to learn about their data, and inform their modeling.
 
@@ -215,7 +215,7 @@ Breaking the data into house price deciles, and examining these relative to the 
 
 This article illustrates elegantly how visualization can be used to explore data.
 
-\subsubsection{Credit card purchases}
+\subsubsection{Credit Card Purchases}
 
 \citet{hand2000} is an early article explaining data mining, using a large Barclay's credit card transactions database as the example. The reason to read this article is see how the humble histogram can be priceless for exploring big data. The histogram, with carefully crafted $\pounds$1 binwidth, is used to display petrol (gas) purchases, and department store spending. We might expect that in department stores there to be strong peaks just before the whole pound, and it is exactly what we see. But to see similar patterns in petrol purchases is a surprise. There are large peaks in petrol purchases at $\pounds$10, $\pounds$15 and $\pounds$20, and to a lesser extent $\pounds$12, $\pounds$25, and $\pounds$30. This behavior is driven by the consumer rather than the price points of store products -- clearly some drivers, a lot of drivers, like to spend whole nice round whole pound amounts when purchasing petrol. Beyond these peaks, the distribution looks close to bell-shaped, centered at $\pounds$20.
 
@@ -225,9 +225,9 @@ Working with huge amounts of data can often be done with basic statistical graph
 
 There is a scarcity of papers on visualization of large data in the most likely candidate statistical journals, e.g. Journal of Statistical Software, Journal of Computational and Graphics Statistics, Computational Statistics, Annals of Applied Statistics. Graphics papers in these journals describe methods useful with relatively small amounts of data, or for special statistics-related purposes, rather than providing solutions to visualizing large amounts of data. The most reliable source of big data visualization examples is IEEE Transactions on Visualization and Computer Graphics. The papers presented at the annual InfoVis conference are published in this journal in one of the last two issues of each year. A more visible location to find the latest research from the statistics community is directly on the CRAN archive (\url{http://www.r-project.org/CRAN}), contains several new packages that are useful for working with large amounts of data.
 
-\subsection{Old Friends Reconditioned}
+\subsection{Reconditioning Old Favorites}
 
-Many of the conventional methods of plotting data need a little renovation for working with big data, and this is what some recent papers address.
+Many of the conventional, and useful, methods of plotting data need a little renovation for working with big data, which is addressed by some recent papers address.
 
 \begin{itemize}
 \item Scatterplots
@@ -292,13 +292,13 @@ The split-apply-combine strategy resembles the approach that hadoop \citep{hadoo
 
 \item Interactive graphics
 
-This area is still very much a work in progress, despite existing as a field of research since the late 1960s. But there are some exciting developments, driven in part by the availability of new technology. There are many additional software tools (e.g. \citet{Bostock:2011}'s  {\tt D3}) available for interactive graphics, but close connections between these and statistical modeling, of the sort achieved in XLispStat \citep{Ti91}, is lagging. Some early explorations with interfaces in R were seen in {\tt iplots} \citep{iplots} which interfaced R with Java, and {\tt rggobi} \citep{rggobi-rnews} which interfaced R with C and gtk. Recent developments include {\tt cranvas} \citep{xie2014reactive}, {\tt ggvis} \citep{ggvis} and {\tt shiny} \citep{shiny}.  {\tt Cranvas} provides interactive graphics inside R by using wrappers to qt libraries (\url{https://www.qt.io}), and hence theoretically can be used for really large data sets. {\tt Ggvis} provides web graphics using javascript, and {\tt shiny}  provides graphical user interface elements for the web. For python programmers, the library {\tt bokeh} \citep{bokeh} provides interactive web graphics using javascript.
+This area is still very much a work in progress, despite existing as a field of research since the late 1960s. But there are some exciting developments, driven in part by the availability of new technology. There are many additional software tools (e.g. \citet{Bostock:2011}'s  {\tt D3}) available for interactive graphics, but close connections between these and statistical modeling, of the sort achieved in XLispStat \citep{Ti91}, is lagging. Some early explorations with interfaces in R were seen in {\tt iplots} \citep{iplots} which interfaced R with Java, and {\tt rggobi} \citep{rggobi-rnews} which interfaced R with C and gtk. Recent developments include {\tt gridSVG} \citep{gridSVG}, {\tt animint} \citep{animint}, {\tt cranvas} \citep{xie2014reactive}, {\tt ggvis} \citep{ggvis} and {\tt shiny} \citep{shiny}.  For python programmers, the library {\tt bokeh} \citep{bokeh} provides interactive web graphics using javascript.
 
-Add links to the high-d clustering paper, model vis paper, soybean shiny app, intro
+Both gridSVG and animint are relatively light-weight interactive graphics, designed to enhance existing static graphics, and add several interactive elements. These would be considered to be primarily for communication purposes, where the information in the data is known, and simply needs to be presented. The interactive graphics provides a level of sophistication and allows the user to change a little, but not much, of the information that they are viewing. A simple example of the usefulness is the parallel coordinate plot shown in Figure \ref{eulerian}. With a static plot it is hard to trace a line through all of the variables. A simple interaction to add to this plot would be to highlight the line closest to the mouse cursor so that we can follow it thoughout the plot. Video at \url{https://vimeo.com/137049134} illustrates this done using gridSVG. Animint works similarly, taking ggplot2 plots and adding interaction using javascript. 
 
-animint and gridsvg
+{\tt Cranvas}, and potentially {\tt ggvis}, provide more substantial tools for exploring data generally with interactive graphics. {\tt Cranvas} generates interactive graphics inside R by using wrappers to qt libraries (\url{https://www.qt.io}), and theoretically can be used for really large data sets. The video at \url{https://vimeo.com/137042766} shows cranvas being used to explore a clustering of statistics department graduate programs based on the 2012 National Research Council ranking data. {\tt Ggvis} provides web graphics using javascript, and {\tt shiny} provides graphical user interface elements for the web. {\tt Shiny} has been rapidly adopted by the general community and a showcase of user apps can be viewed at \url{https://www.rstudio.com/products/shiny/shiny-user-showcase/}.
 
-cranvas video and animint and ggvis video and gridsvg parcoords
+With the availability of electronic publications it is also possible to publish interactive graphics as part of a regular journal article. \citet{newell} contains supplementary material with videos of tours for viewing the cluster structure. \citet{modelvis} includes links to videos to illustrate several of the concepts advocating better use of visualization to understand statistical models, particularly for viewing the model in the data space. 
 
 \end{itemize}
 

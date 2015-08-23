@@ -1,4 +1,4 @@
-\begin{thebibliography}{72}
+\begin{thebibliography}{75}
 \newcommand{\enquote}[1]{``#1''}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
@@ -131,6 +131,10 @@ Hand, D.~J., Blunt, G., Kelly, M.~G., and Adams, N.~M. (2000), \enquote{Data
 Hartigan, J.~A. (1975), \enquote{Printer Graphics for Clustering,}
   \textit{Journal of Statistical Computation and Simulation}, 4, 187--213.
 
+\bibitem[{Hocking et~al.(2015)Hocking, VanderPlas, and Sievert}]{animint}
+Hocking, T.~D., VanderPlas, S., and Sievert, C. (2015), \textit{animint:
+  Interactive animations}, r package version 2015.06.16.
+
 \bibitem[{Hofert and M{\"a}chler(2014)}]{hofert2013graphical}
 Hofert, M. and M{\"a}chler, M. (2014), \enquote{A Graphical Goodness-of-fit
   Test for Dependence Models in Higher Dimensions,} \textit{Journal of
@@ -209,13 +213,16 @@ Moustafa, R.~E., Hadia, A.~S., and Symanzik, J. (2011), \enquote{Multi-Class
   Data Exploration Using Space Transformed Visualization Plots,}
   \textit{Journal of Computational and Graphical Statistics}, 20, 298--315.
 
+\bibitem[{Murrell and Potter(2015)}]{gridSVG}
+Murrell, P. and Potter, S. (2015), \textit{gridSVG: Export grid Graphics as
+  SVG}, r package version 1.4-3.
+
 \bibitem[{Newell et~al.(2013)Newell, Cook, Hofmann, and Jannink}]{newell}
 Newell, M., Cook, D., Hofmann, H., and Jannink, J.-L. (2013), \enquote{An
   Algorithm for Deciding the Number of Clusters and Validation using Simulated
   Data with Application to Exploring Crop Population Structure,} \textit{Annals
   of Applied Statistics}, 7, 1898--1916, {S}upplementary material, including
-  videos available
-  \url{http://streaming.stat.iastate.edu/~dicook/HighDClustering}.
+  videos available http://projecteuclid.org/euclid.aoas/1387823303.
 
 \bibitem[{{R Core Team}(2014)}]{R}
 {R Core Team} (2014), \textit{R: A Language and Environment for Statistical
@@ -333,9 +340,16 @@ Wickham, H., Chowdhury, N.~R., and Cook, D. (2014), \enquote{{\tt nullabor}:
   \url{http://cran.r-project.org/web/packages/nullabor/index.html}, maintained
   by Cook, D.
 
-\bibitem[{Wickham et~al.(2015)Wickham, Francois, and Rstudio}]{dplyr}
-Wickham, H., Francois, R., and Rstudio (2015), \enquote{{\tt dplyr}: A Grammar
-  of Data Manipulation,}
+\bibitem[{Wickham et~al.(2015{\natexlab{a}})Wickham, Cook, and
+  Hofmann}]{modelvis}
+Wickham, H., Cook, D., and Hofmann, H. (2015{\natexlab{a}}),
+  \enquote{Visualizing statistical models: Removing the blindfold,}
+  \textit{Statistical Analysis and Data Mining}, 8, 203--225.
+
+\bibitem[{Wickham et~al.(2015{\natexlab{b}})Wickham, Francois, and
+  Rstudio}]{dplyr}
+Wickham, H., Francois, R., and Rstudio (2015{\natexlab{b}}), \enquote{{\tt
+  dplyr}: A Grammar of Data Manipulation,}
   \url{http://cran.r-project.org/web/packages/dplyr/index.html}, maintained by
   Wickham, H.
 
