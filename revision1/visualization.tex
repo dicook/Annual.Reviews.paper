@@ -69,7 +69,7 @@ This paper has two components: (1) Contemporary illustrations of the usefulness 
 
 Two stories from 2014 point to the use of graphics from successful data mining teams: the key to their model winning the competition was the data pre-processing involving a lot of data plots that helped them to understand what they were working with, and problems with the data that needed to be addressed before being able to make effective models. This is important for big data, how to effectively clean, transform and pre-process large complex data sets. Visualization plays a key role. This is just as important for big data as it was for John Tukey's days, and the technology has radically changed.
 
-\subsubsection{Kaggle Health Heritage Prize}
+\subsubsection{Kaggle Health Heritage Prize Winner's Advice}
 
 In April, 2011 Kaggle posted the details of the Heritage Health Prize ``Improve Healthcare, Win \$3,000,000''.  Dr. Phil Brierley was part of the three person team that won the first two milestone awards of \$230,000, and combined forces with another team to win the final prize of \$500,000. This competition is an example of big data challenges of today: large amounts of data on hospital admissions being used to develop models to improve the efficiency of healthcare spending. In interviews post-prize, there are echoes of Tukey's long ago words:
 
@@ -84,7 +84,7 @@ These new problems are always discovered by visualising the data in some way and
 %\label{liqshock}
 %\end{figure*}
 
-Here is an example from Dr. Brierley's blog, that illustrates an algorithmic trading challenge. Figure \ref{liqshock} shows a plot made of timing of ``liquidity shocks'' in data from the London Stock Exchange -- yes, this is a really simple plot, but it tells us a lot about the data, which is:
+There is a concrete example on Dr. Brierley's blog that illustrates how a plot indicated to him that the challenge was not worth entering. It is an algorithmic trading challenge, with data from the London Stock Exchange, and he made a simple time series plot showing the timing of ``liquidity shocks'' -- yes, a really simple time series plot -- from which he observed:
 
 \begin{quote}
 {\em ``Now it is quite clear there is something going on at 1pm, 2:30pm, after 3:30pm and at 4pm.
@@ -102,7 +102,7 @@ As it stands any models built could potentially fail on the leaderboard (or real
 The current competition data is potentially lacking the full information required to build a model that is as robust as possible over time.'' }
 \end{quote}
 
-\subsubsection{Data Mining Cup}
+\subsubsection{Data Mining Cup Winners' Strategies}
 
 Each year Prudsys AG  challenges students with  the Data Mining Cup competition. In 2014, the problem was announced to student team on April 2, and students needed to have their final entry by May 14. The student teams had six weeks to develop a solution for a data mining problem on the topic of optimal return prognosis. More specifically, the goal was to use an online shop's historical purchase data to come up with a model for new orders that would calculate the probability of a purchase leading to a return. In this year's competition, a team of students (Guillermo Basulto-Elias (statistics), Fan Cao (statistics), Xiaoyue Cheng (statistics), Marius Dragomiroiu (computer science), Jessica Hicks (bioinformatics and computational biology), Cory Lanker (statistics), Ian Mouzon (statistics), Lanfeng Pan (statistics) and Xin Yin (bioinformatics and computational biology/statistics) from Iowa State University was the first north American team to win. A key component of that win was the pre-processing of the data, that utilized substantial graphics to learn about their data, and inform their modeling.
 
@@ -114,9 +114,9 @@ Figure \ref{DMC1} shows one plot used early by the ISU DMC team, to examine retu
 \label{DMC1}
 \end{figure*}
 
-\subsection{Visualization is NOT Prediction}
+\subsection{Visualization is NOT Prediction .... and this is ok}
 
- .... and this is ok.  In this section, we will describe examples of visualization being used in the process of analyzing big data sets, from our own work and examples from published work. What we learn from plots is different from that of modeling and prediction.
+So much of statistics is preoccupied with predictive models which is very important. But an equally important part of working with big data is to develop methodology for helping analysts explore and understand what patterns are present. We might call this ``playing in the sandbox''.  In what follows, several examples from our own work and published work are shown that illustrate visualization being used in the process of analyzing big data sets. Generally what can be learned about the data from plots can be very different from what would be learned by modeling and prediction, which means both types of summarization are equally important.
 
 %For big data, there are possibly many, many, many things that might be learned. There are likely many facets to the data. It is important to note that exploring big data visually is typically generating, not testing, hypotheses.
 
@@ -149,7 +149,7 @@ In the 2008 US Presidential election cycle a young man called Nate Silver burst 
 
 Differences between polls produced by different pollsters can be seen. DailyKos light blue) is consistently higher than the trend, and consistently produced the most pro-Obama results. Rasmussen (pink) tended to be fairly close to the trend or below it (pro-McCain). Hotline (yellow) was varied early on in the season but closer to election day was near the average of all other polls. Gallup (orange) is noticeably varied, it has some of the most pro-McCain results as well as the most pro-Obama results. Gallup is a legacy American pollster who dates back to the early 1900s, and we would have expected that they would be providing more reliable polling numbers than observed. Interestingly the 538 web site now has detailed ratings of the major pollsters operating in the USA, and Gallup scores a poor C+. The plot of the national trend polls allows us to see the variability and the bias' of polling organizations. The pollster DailyKos, also known as Research 200, is a community action organization with political leanings towards to Democratic party. Actually it is one of the pollsters currently ``banned'' by 538! Rasmussen on the other hand has a reputation of leaning to the right, and currently has a large adjustment value to correct this on 538. Hotline is fairly neutral.
 
-\begin{figure*}[t]
+\begin{figure*}[!htp]
 \begin{minipage}[h]{7in}
 \centering
 %\vspace*{.3in}~\\
@@ -173,13 +173,13 @@ There were 9 entries, four of which won prizes, and are described in short artic
 
 \citet{expo-hofmann} explored many aspects of the data. Maps of origin to destination show which carriers operate on a hub system and which don't. Time series of volume at major airports show effects of events like the 9/11 tragedy. Side-by-side boxplots were utilized to display delays by airport, revealing the problematic EWR, SFO, ORD, LGA and the efficient operations of DTW, MSP and DFW (Figure \ref{airlines2}). Facetted scatterplots with overlaid loess fits show trends in delays by carrier. This group also looked for ``gaps'' in the data, where planes are last seen at one airport, and then magically appear at another airport. These gaps correspond to ghost flights, planes that fly passengerless, in order to get a vehicle into a location that it is needed. It represents inefficiency in operations. Most carriers have been reducing this costly operation, but Northwest airlines had an increase in the latter few years of this data. Delta, which merged with Northwest in 2008, saw improvement in efficiency. Interactive graphics was employed to examine different chunks of the data, like the relationship between fuel consumption, distance flown by carrier and year (Figure \ref{carrier-efficiency}). Basic plots revealed that many problems with the data, flights leaving 12 hours before they were scheduled (Figure \ref{airlines1}), several hot air balloons that travel 430 miles per hour, and more than 200,000 flights of less than 50 miles. Stringing delays together with weather patterns revealed the problems that strong cross-winds cause at airports. And using some interpolation between geographic locations of airports, the departure and arrival times, allowed animating air traffic flow across the nation (\url{https://vimeo.com/119233995}).
 
-\begin{figure*}[htp]
+\begin{figure*}[!htp]
 \centerline{\includegraphics[width=5in]{images/airlines2.pdf}}
 \caption{Arrival delays by airport, sorted top to bottom from worst average delay to least, and volume of traffic. Only the top 50 airports based on delay are shown. Over this time period EWR (Newark, NJ) had the worst record in delays even though their traffic volume was not large compared to other airports. ORD (Chicago, IL) had a bad delay record, but they also have the highest volume. DFW (Dallas-Fort Worth, TX) compared favorably with low average delays and very high volume.}
 \label{airlines2}
 \end{figure*}
 
-\begin{figure*}[p]
+\begin{figure*}[!htp]
 \centerline{\includegraphics[width=5in]{images/airline-manet1.png}}
 \smallskip
 \centerline{\includegraphics[width=5in]{images/airline-manet2.png}}
@@ -189,7 +189,7 @@ There were 9 entries, four of which won prizes, and are described in short artic
 \label{carrier-efficiency}
 \end{figure*}
 
-\begin{figure*}[t]
+\begin{figure*}[!htp]
 \centerline{\includegraphics[width=5in]{images/airlines1.pdf}}
 \caption{Histograms showing arrival and departure delays across carriers, airports and years. Delays aggregated in 15 minute bin widths. Arrival delay is calculated from the difference between the reported actual and scheduled departures. Arrival delays of -24 hours would be a plane that left a day early, which we would expect is impossible. }
 \label{airlines1}
@@ -197,7 +197,7 @@ There were 9 entries, four of which won prizes, and are described in short artic
 
 \subsubsection{Wikipedia}
 
-Wikipedia (\url{https://www.wikipedia.org/}) is a collaboratively written encyclopedia, that is a huge resource for the general public. Because it is a primary example of mass editing, the flow of edits is potentially interesting. This problem was tackled by \citet{wiki}, with an associated web site \url{http://fernandaviegas.com/wikipedia.html} where you can see some of the visualizations. The book chapter describes the process of pulling the data, pre-processing and making visualizations of different aspects. Their endeavor began in 2003, early days for the encyclopedia. As an example of the magnitude of the data, the page on ``Microsoft'' had 198 edits generating 6.3 megabytes of text, and the page on ``Cat'' had just 54 edits.
+Wikipedia (\url{https://www.wikipedia.org/}) is a collaboratively written encyclopedia, that is a huge resource for the general public. Because it is a primary example of mass editing, the flow of edits is potentially interesting. This problem was tackled by \citet{wiki}, with associated web sites \url{http://fernandaviegas.com/wikipedia.html}, \url{http://www.bewitched.com/historyflow.html} where you can see some of the visualizations. The book chapter describes the process of pulling the data, pre-processing and making visualizations of different aspects. Their endeavor began in 2003, early days for the encyclopedia. As an example of the magnitude of the data, the page on ``Microsoft'' had 198 edits generating 6.3 megabytes of text, and the page on ``Cat'' had just 54 edits.
 
 The edits data is huge. To tackle is Wattenberg and Viega, initially created an interactive visualization for single pages. They use a modified parallel coordinate plot \citep{In85,We90}, which might also be considered to be a variation of a hammock plot \citep{hammock,ggparallel}, with versions as the variables, and text size as the stripe thickness. Stripes are colored by author, so individual contributions to pages can be tracked. (Anonymous editors are grey.) The overall height of the plot indicates the length of the article. There are two prominent examples shown: ``chocolate'' and ``abortion''. The displays enable some information to be immediate: if there is ownership of a page by a few editors then there are a few differently colored stripes. The page for ``abortion'' has a big empty patch indicating tha the entire page was erased temporarily, probably by a malicious editor. Tug-or-wars between editors can be seen in some politically or emotionally controversial subjects. Interaction is provided to trace editors contributions and to see the actual text that was edited.
 
@@ -207,7 +207,7 @@ Raw information in the form of text provides new challenges for visualization. U
 
 \subsubsection{The San Francisco Housing Crisis}
 
-Another book in the Beautiful series is ``Beautiful Data'' and in that volume you will find an article by \citet{SFHousing} that illustrates visually exploring the housing crisis with an early version of the R software {\tt ggplot2} \citep{wickham2009ggplot2}. This package is now almost ubiquitously used for plotting data. This book chapter is is an extraordinary example of pulling data from the web, cleaning and displaying it in different ways to learn about events that affect our lives. The explanation of the process is superb.
+The Wikipedia example is published in a book called ``Beautiful Visualization''. Another book in the Beautiful series is ``Beautiful Data'' and in that volume you will find an article by \citet{SFHousing} that illustrates visually exploring the housing crisis with an early version of the R software {\tt ggplot2} \citep{wickham2009ggplot2}. This package is now very widely used for plotting data. This book chapter is is an extraordinary example of pulling data from the web, cleaning and displaying it in different ways to learn about events that affect our lives. The explanation of the process is superb.
 
 The story of the housing crisis begins by studying the temporal scale: average prices and number of sales from 2003-2009. We can see the average house price double over this period, and then drop by half starting summer 2007. Sales tend to cycle some, showing some seasonality, but clear decline starting in 2006. Interestingly, sales tick up again early in 2008 after sharp declines in average price. The authors then examine economic conditions, and compare inflation adjusted,  alongside unadjusted, average price to learn that these two measures started diverging mid-2005. The two had not converged by 2009.
 
@@ -221,10 +221,13 @@ This article illustrates elegantly how visualization can be used to explore data
 
 Working with huge amounts of data can often be done with basic statistical graphics. There are a few cautions. Bars of small counts get lost easily with big data, which might result in failing to observe rare events. Basic scatterplots may suffer from overplotting.  Scaling up of basic statistical graphics does require some care.
 
-\section{Review of the Literature}
+\section{Literature Review}
 
+There is a scarcity of papers on visualization of large data in the most likely candidate statistical journals, e.g. Journal of Statistical Software, Journal of Computational and Graphics Statistics, Computational Statistics, Annals of Applied Statistics. Graphics papers in these journals describe methods useful with relatively small amounts of data, or for special statistics-related purposes, rather than providing solutions to visualizing large amounts of data. The most reliable source of big data visualization examples is IEEE Transactions on Visualization and Computer Graphics. The papers presented at the annual InfoVis conference are published in this journal in one of the last two issues of each year. A more visible location to find the latest research from the statistics community is directly on the CRAN archive (\url{http://www.r-project.org/CRAN}), contains several new packages that are useful for working with large amounts of data.
 
-There is a scarcity of papers on visualization of large data in the most likely statistical journals, e.g. Journal of Computational and Graphics Statistics, Computational Statistics, Annals of Applied Statistics. Papers that do focus on graphics are fairly associated with small data, an special statistics-related purposes, rather than providing solutions to visualizing large amounts of data. The most reliable source is IEEE Transactions on Visualization and Computer Graphics. The papers presented at the annual InfoVis conference are published in this journal in one of the last two issues of each year. A less formal, but very visible resource, the CRAN archive (\url{http://www.r-project.org/CRAN}) contains several recently contributed packages that are useful for working with large amounts of data.
+\subsection{Old Friends Reconditioned}
+
+Many of the conventional methods of plotting data need a little renovation for working with big data, and this is what some recent papers address.
 
 \begin{itemize}
 \item Scatterplots
@@ -241,15 +244,15 @@ That statisticians frequently use scatterplots for examining association between
 
 Table plots are adapted from side-by-side histograms, of different variables. We most often see side-by-side plots used to compare the distributions of subsets of the same data, for example comparing males and females. Generally side-by-side boxplots are the optimal way to make comparisons between groups. Histograms can also serve the purpose, but they provide more complex summaries of the distribution than a boxplot renders. Table plots came to prominence with the tableau software \citep{tableau}, but they were recommended originally by \citet{carr-grey} (also shown in \citet{carr-tabplot}) as a way to replace tables with graphs.
 
-The table plot bins the values of different variables, and displays the mean value of each bin as a bar. For categorical variables stacked bars are displayed. Each plot is sorted in the same way, according to one of the variables in the collection or by another external criteria. The sorting enables a rough assessment of the association between variables -- if the two plots have the same shape then the two variables have positive association. Figure \ref{tabplot} shows an example produced using the recently released R package {\tt tabplot} \citep{tennekes2012package}. It displays the sales records for houses sold in Ames, Iowa from 2008-2010. The variables are sorted by the sales price, 0\% represents the most expensive houses, which has a mean value of about \$500,000, and 100\% represents the cheapest, having a mean value of about \$50,000. There are 1,615 houses in the data set, and these are grouped into 100 bins of equal size by the sales price. The mean values the other variables for houses in each these bins is shown in the other plots. The exception is the house style, which is categorical, and so proportions of the different styles are shown in stacked bar charts. We learn from this display rough associations:
+The table plot bins the values of different variables, and displays the mean value of each bin as a bar. For categorical variables stacked bars are displayed. Each plot is sorted in the same way, according to one of the variables in the collection or by another external criteria. The sorting enables a rough assessment of the association between variables -- if the two plots have the same shape then the two variables have positive association. Figure \ref{tabplot} shows an example produced using the recently released R package {\tt tabplot} \citep{tennekes2012package}. It displays the sales records for houses sold in Ames, Iowa from 2008-2010. The variables are sorted by the sales price, the top represents the 1\% most expensive houses, which have a mean value of about \$500,000, and bottom represents the cheapest 1\%, having a mean value of about \$50,000. There are 1,615 houses in the data set, and these are grouped into 100 bins of equal size by the sales price. The mean values the other variables for houses in each these bins is shown in the other plots. The exception is the house style, which is categorical, and so proportions of the different styles are shown in stacked bar charts. We learn from this display rough associations:
 
 \begin{itemize} \itemsep 0in
-\item Sales price is NOT associated with number of bedrooms, which is a little surprising. The pattern in the plot of bedrooms is fairly uniform, evenly distributed across all house prices, which leads to the conclusion that there is no association. On the other hand, there is a slight association with number of baths, because the average number of baths drops from 2 to 1 for lower priced homes.
-\item Price is closely associated with living area and garage area because fairly strong declines in both coincide with declines in price.
+\item Sales price is NOT closely associated with number of bedrooms, which is a little surprising. The pattern in the plot of bedrooms is fairly uniform, evenly distributed across all house prices, which leads to the conclusion that there is no association. On the other hand, there is a slight association with number of baths, because the average number of baths drops from 2 to 1 for lower priced homes.
+\item Price is more closely associated with living area and garage area because fairly strong declines in both coincide with declines in price.
 \item House style shows a slight association, the higher priced homes are more commonly two story style (green) than the lower priced homes.
 \end{itemize}
 
-\begin{figure*}[t]
+\begin{figure*}[htp]
 \centerline{\includegraphics[width=0.95\textwidth]{images/tabplot.pdf}}
 \caption{Table plot of Ames, Iowa, housing sales produced using the R package {\tt tabplot}. Variables that have a positive association have similarly shaped distribution.}
 \label{tabplot}
@@ -261,9 +264,23 @@ An interactive version of table plots is available with the R package {\tt tabpl
 
 \item Parallel coordinates
 
-Another way to display high-dimensional data is the parallel coordinate plot \citep{In85,We90}. Several developments of these plots have been made in recent years. \citet{hurley.oldford} initially begin working on graphs as a way to organize the axes of a parallel coordinate plot, but the work has extended to provide an algorithm for navigating high-dimensional spaces. Their R package, {\tt PairsViz} \citep{pairviz}, implements the parallel coordinate plot style visualization. \citet{hofmann.vendettuoli} describe variations of parallel coordinate plots for categorical data and their R package, {\tt ggparallel} \citep{ggparallel}, enables others to use the methods. \citet{envelope} provide envelope methods for parallel coordinate plots for large data.
+Another way to display high-dimensional data is the parallel coordinate plot \citep{In85,We90}. Several developments of these plots have been made in recent years. \citet{hurley.oldford} initially begin working on graphs as a way to organize the axes of a parallel coordinate plot, but the work has extended to provide an algorithm for navigating high-dimensional spaces. Their R package, {\tt PairsViz} \citep{pairviz}, implements the parallel coordinate plot style visualization. Figure \ref{eulerian} shows examples for data on nutritional value of chocolates: (a) is the traditional, and (b) is the eulerian parallel coordinate plot. In the Eulerian adaptation variables are repeated so that all pairs can be examined. Line color indicates type of chocolate (orange=milk, brown=dark). In both, the histogram displays a scagnostic value, the inverse Wilks $\Lambda$ MANOVA statistic which indicates how well the two variables split the two groups, the higher the bar the more separated.  \citet{hofmann.vendettuoli} describe variations of parallel coordinate plots for categorical data and their R package, {\tt ggparallel} \citep{ggparallel}, enables others to use the methods (Figure \ref{titanic}). \citet{envelope} provide envelope methods for parallel coordinate plots for large data.
 
-\item Rearranging and summarizing data
+\begin{figure*}[p]
+\centerline{\includegraphics[width=0.95\textwidth]{images/pcp-choc-classic.pdf}}
+\centerline{\includegraphics[width=0.95\textwidth]{images/pcp-choc-eulerian.pdf}}
+\caption{Classical (a) and eulerian (b) parallel coordinate plots of nutritional measurements on chocolates. The eulerian parallel coordinate plot more strongly indicates a difference between the two types of chocolate (orange=milk, brown=dark), and from the scagnostic describing separation displayed by the histogram, we can learn that higher values occur when Fiber is one of the two variables, indicating the importance of this variable.}
+\label{eulerian}
+\end{figure*}
+
+\begin{figure*}[!htp]
+\centerline{\includegraphics[width=0.45\textwidth]{images/parset-titanic.pdf}\includegraphics[width=0.45\textwidth]{images/least-angle-titanic.pdf}}
+\caption{Variations on parallel coordinates for categorical variables. If the ribbons peel off from the bars being initially flat (right side plot) provides for more accurate reading of the proportions in each category.}
+\label{titanic}
+\end{figure*}
+
+
+\item Rearranging, summarizing and plotting data elegantly
 
 When data becomes very large an alternative approach can be to make summaries and display these. The {\tt ggplot2} package has revolutionized the display of data for many analysts, and it comes with siblings in the Wickham suite of software that can help process data for viewing in different ways: {\tt tidyr}, {\tt reshape2}, {\tt dplyr}, {\tt lubridate}, {\tt broom}, {\tt fstread}, {\tt bigrquery}, {\tt ggmap}, {\tt bigvis}.
 
@@ -275,13 +292,20 @@ The split-apply-combine strategy resembles the approach that hadoop \citep{hadoo
 
 \item Interactive graphics
 
-This is still a work in progress, but there are some exciting developments. There have been many additional software tools (e.g. \citet{Bostock:2011}'s  {\tt D3}) available for interactive graphics, but close connections between these and statistical modeling, of the sort achieved in XLispStat \citep{Ti91}, is lagging. Some early explorations with interfaces in R were seen in \citet{iplots} which interfaced R with Java and \citet{rggobi-rnews} which interfaced R with C and gtk. Recent developments include {\tt cranvas} \citep{xie2014reactive}, {\tt ggvis} \citep{ggvis} and {\tt shiny} \citep{shiny}.  {\tt cranvas} provides interactive graphics inside R by using wrappers to qt graphics libraries, and hence theoretically can be used for really large data sets. {\tt ggvis} provides web graphics using javascript, and {\tt shiny}  provides graphical user interface elements for the web. For python programmers, the library {\tt bokeh} \citep{bokeh} provides interactive web graphics using javascript.
+This area is still very much a work in progress, despite existing as a field of research since the late 1960s. But there are some exciting developments, driven in part by the availability of new technology. There are many additional software tools (e.g. \citet{Bostock:2011}'s  {\tt D3}) available for interactive graphics, but close connections between these and statistical modeling, of the sort achieved in XLispStat \citep{Ti91}, is lagging. Some early explorations with interfaces in R were seen in {\tt iplots} \citep{iplots} which interfaced R with Java, and {\tt rggobi} \citep{rggobi-rnews} which interfaced R with C and gtk. Recent developments include {\tt cranvas} \citep{xie2014reactive}, {\tt ggvis} \citep{ggvis} and {\tt shiny} \citep{shiny}.  {\tt Cranvas} provides interactive graphics inside R by using wrappers to qt libraries (\url{https://www.qt.io}), and hence theoretically can be used for really large data sets. {\tt Ggvis} provides web graphics using javascript, and {\tt shiny}  provides graphical user interface elements for the web. For python programmers, the library {\tt bokeh} \citep{bokeh} provides interactive web graphics using javascript.
+
+Add links to the high-d clustering paper, model vis paper, soybean shiny app, intro
+
+animint and gridsvg
+
+cranvas video and animint and ggvis video and gridsvg parcoords
 
 \end{itemize}
 
 %%%%%%%%%%%
+\subsection{Statistics, Infovis, Biovis}
 
-Within the statistical literature there has been work on providing visual model diagnostics, a new plot type for visualizing clustering of multidimensional data and stronger connections between exploratory data analysis using graphics and inferential statistics. \citet{hofert2013graphical} provides a graphical goodness-to-fit test for dependence models in higher dimensions, and implements these in an R package, {\tt copula}. \citet{baddeley2013residual} provide new graphical residual diagnostics for covariate effects in spatial point processes, which help assess and improve the fit of these complex models. The R package, {\tt spatstat}, is extended to incorporate these diagnostics. Rainbow plots and bagplots \citep{rainbow} were developed for viewing a large number of functional data, smooth curves or surfaces, and has an accompanying R package. \citet{van2011visualizing} propose the visualization method for a hierarchical tree of high density clusters in high dimensional data. They project the multidimensional clusters to a 2D or 3D layout using an optimized star coordinates layout. It allows to explore the distribution of clusters interactively and helps the user to understand the relationship between the clusters and the original data space. \citet{newell} describe methods for finding clusters in populations based on genetic markers, very sparse, high-dimensional data, and using the tour \citep{As85} to visualize the cluster structure. \citet{buja:2009} and \citet{majumder:2013} detail new protocols for data visualization that would enable statistical inference to be conducted to quantify the significance of structure seen in plots. This is really important development for working with big data sets, because we typically do not have a classical inference environment. It is easy to imagine patterns in data, and these protocols provide a way to determine if what we see is really there. As a statistician, strictly adhering to the rigid assumptions required by classical hypothesis testing, runs the risk of non-discovery, failing to see something that is present in the data. This new work makes it possible for statisticians to be both explorers and skeptics. The protocols are implemented in the R package {\tt nullabor} \citep{nullabor}.
+Within the statistical literature there has been work on providing visual model diagnostics, a new plot type for visualizing clustering of multidimensional data and stronger connections between exploratory data analysis using graphics and inferential statistics. \citet{hofert2013graphical} provides a graphical goodness-to-fit test for dependence models in higher dimensions, and implements these in an R package, {\tt copula}. \citet{baddeley2013residual} provide new graphical residual diagnostics for covariate effects in spatial point processes, which help assess and improve the fit of these complex models. The R package, {\tt spatstat}, is extended to incorporate these diagnostics. Rainbow plots and bagplots \citep{rainbow} were developed for viewing a large number of functional data, smooth curves or surfaces, and has an accompanying R package. \citet{van2011visualizing} propose the visualization method for a hierarchical tree of high density clusters in high dimensional data. They project the multidimensional clusters to a 2D or 3D layout using an optimized star coordinates layout. It allows to explore the distribution of clusters interactively and helps the user to understand the relationship between the clusters and the original data space. \citet{newell} describe methods for finding clusters in populations based on genetic markers, very sparse, high-dimensional data, and using the tour \citep{As85} to visualize the cluster structure. \citet{buja:2009} and \citet{majumder:2013} detail new protocols for data visualization that would enable statistical inference to be conducted to quantify the significance of structure seen in plots. This is really important development for working with big data sets, because we typically do not have a classical inference environment. It is easy to imagine patterns in data, and these protocols provide a way to determine if what we see is really there. As a statistician, strictly adhering to the rigid assumptions required by classical hypothesis testing, runs the risk of non-discovery, failing to see something that is present in the data. This new work makes it possible for statisticians to be both explorers and skeptics. The protocols are implemented in the R package {\tt nullabor} \citep{nullabor}. And \citet{hofmann:2012} bridges statistics and infovis providing a formal protocol for determining if one type of display better communicates information than another.
 
 % Massively Parallel Nonparametric Regression, With an Application to Developmental Brain Mapping 23(1) 2014
 %Philip T. Reiss, Lei Huang, Yin-Hsiu Chen, Lan Huo, Thaddeus Tarpey and Maarten Mennes

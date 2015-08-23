@@ -1,4 +1,4 @@
-\begin{thebibliography}{71}
+\begin{thebibliography}{72}
 \newcommand{\enquote}[1]{``#1''}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
@@ -142,6 +142,12 @@ Hofmann, H., Cook, D., Kielion, C., Schloerke, B., Hobbs, J., Loy, A., Mosley,
   L., Rockoff, D., Huang, Y., Wrolstad, D., and Yin, T. (2011),
   \enquote{Delayed, Canceled, on Time, Boarding… Flying in the USA,}
   \textit{Journal of Computational and Graphical Statistics}, 20, 287--290.
+
+\bibitem[{Hofmann et~al.(2012)Hofmann, Follett, Majumder, and
+  Cook}]{hofmann:2012}
+Hofmann, H., Follett, L., Majumder, M., and Cook, D. (2012), \enquote{Graphical
+  Tests for Power Comparison of Competing Designs,} \textit{IEEE Transactions
+  on Visualization and Computer Graphics}, 18, 2441--2448.
 
 \bibitem[{Hofmann and Vendettuoli(2013{\natexlab{a}})}]{hofmann.vendettuoli}
 Hofmann, H. and Vendettuoli, M. (2013{\natexlab{a}}), \enquote{Common Angle

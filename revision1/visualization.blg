@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: visualization.aux
 The style file: asa.bst
 Database file #1: visualization.bib
-You've used 71 entries,
+You've used 72 entries,
             2777 wiz_defined-function locations,
-            1033 strings with 15697 characters,
-and the built_in function-call counts, 35344 in all, are:
-= -- 3313
-> -- 1756
+            1038 strings with 15835 characters,
+and the built_in function-call counts, 35927 in all, are:
+= -- 3367
+> -- 1792
 < -- 55
-+ -- 654
-- -- 562
-* -- 3335
-:= -- 6165
-add.period$ -- 136
-call.type$ -- 71
-change.case$ -- 478
-chr.to.int$ -- 68
-cite$ -- 71
-duplicate$ -- 1513
-empty$ -- 2460
-format.name$ -- 782
-if$ -- 6904
++ -- 667
+- -- 574
+* -- 3396
+:= -- 6268
+add.period$ -- 138
+call.type$ -- 72
+change.case$ -- 486
+chr.to.int$ -- 69
+cite$ -- 72
+duplicate$ -- 1534
+empty$ -- 2496
+format.name$ -- 797
+if$ -- 7014
 int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 58
-newline$ -- 218
-num.names$ -- 294
-pop$ -- 511
+missing$ -- 59
+newline$ -- 221
+num.names$ -- 298
+pop$ -- 519
 preamble$ -- 1
-purify$ -- 468
+purify$ -- 476
 quote$ -- 0
-skip$ -- 1016
+skip$ -- 1028
 stack$ -- 0
-substring$ -- 2304
-swap$ -- 412
+substring$ -- 2347
+swap$ -- 417
 text.length$ -- 14
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 624
+type$ -- 633
 warning$ -- 0
-while$ -- 311
+while$ -- 316
 width$ -- 0
-write$ -- 785
+write$ -- 796
